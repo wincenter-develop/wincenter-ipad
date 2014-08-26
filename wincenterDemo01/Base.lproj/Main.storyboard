@@ -5817,6 +5817,16 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NXq-9c-E28" id="tRm-aW-29e">
                                             <rect key="frame" x="0.0" y="0.0" width="540" height="286"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aAB-5h-00f">
+                                                    <rect key="frame" x="0.0" y="35" width="540" height="216"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="web-50-jMf" id="TXo-8Z-68M"/>
+                                                        <outlet property="delegate" destination="web-50-jMf" id="t18-wU-2Qe"/>
+                                                    </connections>
+                                                </pickerView>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -5824,13 +5834,18 @@
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="web-50-jMf" id="naC-3i-MfL"/>
-                            <outlet property="delegate" destination="web-50-jMf" id="xNF-Wh-b5I"/>
+                            <outlet property="delegate" destination="web-50-jMf" id="8I5-dx-g5P"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="创建虚拟机" id="oSj-Us-Fgv">
-                        <barButtonItem key="rightBarButtonItem" title="关闭" id="806-TQ-Cl2">
+                        <barButtonItem key="leftBarButtonItem" title="关闭" id="806-TQ-Cl2">
                             <connections>
                                 <action selector="close:" destination="web-50-jMf" id="lG2-oB-Lfz"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="完成" id="Cnb-Sm-4EA">
+                            <connections>
+                                <action selector="done:" destination="web-50-jMf" id="zUM-6J-MtV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -5843,27 +5858,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ns3-eD-vC0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3616" y="2784"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="1Re-pP-Uws">
-            <objects>
-                <viewController id="1Yj-1q-v0R" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eCC-Kk-133"/>
-                        <viewControllerLayoutGuide type="bottom" id="Hpf-6p-nes"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="DR5-lE-Uvg">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="j7I-Fu-xdz"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nrd-6A-qDl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4298" y="2630"/>
         </scene>
         <!--Vm CollectionVC-->
         <scene sceneID="b68-q3-b3O">
@@ -6814,8 +6808,8 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="e8l-6u-ART"/>
+        <segue reference="FRz-kX-7gf"/>
         <segue reference="ohd-f6-Vnc"/>
         <segue reference="aDs-d2-keC"/>
-        <segue reference="FRz-kX-7gf"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -9,7 +9,9 @@
 #import "VmNewVC.h"
 
 @interface VmNewVC ()
-
+@property NSMutableArray *tempData;
+@property NSMutableArray *sizeData;
+@property NSMutableArray *networkData;
 @end
 
 @implementation VmNewVC
@@ -32,12 +34,28 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.tempData = [NSMutableArray new];
+    self.sizeData = [NSMutableArray new];
+    self.networkData = [NSMutableArray new];
+    for (int i =0; i< 11; i++) {
+        [self.tempData addObject:[NSString stringWithFormat:@"虚拟机模版－%d",i]];
+        [self.sizeData addObject:[NSString stringWithFormat:@"规格－%d",i]];
+        [self.networkData addObject:[NSString stringWithFormat:@"网络－%d",i]];
+    }
+
+    self.vmTemp.text = self.tempData[0];
+
+    self.vmSize.text = self.sizeData[0];
+
+    self.vmNetwork.text = self.networkData[0];
+
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
@@ -46,17 +64,17 @@
 
 // returns the # of rows in each component..
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
-    return 10;
+    return self.tempData.count;
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
     switch (component) {
         case 0:
-            return[ NSString stringWithFormat:@"cpu-%d", row];
+            return self.tempData[row];
         case 1:
-            return[ NSString stringWithFormat:@"memory-%d", row];
+            return self.sizeData[row];
         case 2:
-            return[ NSString stringWithFormat:@"network-%d", row];
+            return self.networkData[row];
         default:
             break;
     }
@@ -64,19 +82,26 @@
     
 }
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-//    switch (component) {
-//        case 0:
-//            self.vmTemp.text = pickerView ;
-//        case 1:
-//            return[ NSString stringWithFormat:@"memory-%d", row];
-//        case 2:
-//            return[ NSString stringWithFormat:@"network-%d", row];
-//        default:
-//            break;
-//    }
+
+    switch (component) {
+        case 0:
+            self.vmTemp.text = self.tempData[row];
+            break;
+        case 1:
+            self.vmSize.text = self.sizeData[row];
+            break;
+        case 2:
+            self.vmNetwork.text = self.networkData[row];
+            break;
+        default:
+            break;
+    }
 
 }
 - (IBAction)close:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (IBAction)done:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

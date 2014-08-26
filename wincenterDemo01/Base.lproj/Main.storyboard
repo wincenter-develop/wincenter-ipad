@@ -1205,6 +1205,21 @@
             </objects>
             <point key="canvasLocation" x="-755" y="1189"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ib1-JI-bza">
+            <objects>
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="1OS-Ed-JEU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wQh-Vp-Wkw">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MUe-Ds-WwV" kind="relationship" relationship="rootViewController" id="tuC-Sg-1EE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xQy-LS-Z0R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2126" y="349"/>
+        </scene>
         <!--Datacenter Detail PageVC-->
         <scene sceneID="mDt-eX-sc3">
             <objects>
@@ -7086,6 +7101,8 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="EuJ-h6-fcO"/>
+        <segue reference="CJj-pL-Q9B"/>
         <segue reference="ID4-Zj-INj"/>
         <segue reference="FRz-kX-7gf"/>
         <segue reference="ohd-f6-Vnc"/>

@@ -13,6 +13,8 @@
 		6895B24819AC791A0024FF40 /* WarningInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895B24719AC791A0024FF40 /* WarningInfoCell.m */; };
 		6895B24B19AC79590024FF40 /* WarningInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895B24A19AC79590024FF40 /* WarningInfoVC.m */; };
 		6895B24E19AC79810024FF40 /* WarningInfoCellForTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895B24D19AC79810024FF40 /* WarningInfoCellForTime.m */; };
+		68C69DE419AC83EE00882045 /* VmDetailCPUConfigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C69DE319AC83EE00882045 /* VmDetailCPUConfigVC.m */; };
+		68C69DE719AC840D00882045 /* VmDetailMemryConfigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C69DE619AC840D00882045 /* VmDetailMemryConfigVC.m */; };
 		8411FA21199DE3A9002168F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8411FA20199DE3A9002168F4 /* Foundation.framework */; };
 		8411FA23199DE3A9002168F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8411FA22199DE3A9002168F4 /* CoreGraphics.framework */; };
 		8411FA25199DE3A9002168F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8411FA24199DE3A9002168F4 /* UIKit.framework */; };
@@ -124,6 +126,10 @@
 		6895B24A19AC79590024FF40 /* WarningInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarningInfoVC.m; sourceTree = "<group>"; };
 		6895B24C19AC79810024FF40 /* WarningInfoCellForTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WarningInfoCellForTime.h; sourceTree = "<group>"; };
 		6895B24D19AC79810024FF40 /* WarningInfoCellForTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarningInfoCellForTime.m; sourceTree = "<group>"; };
+		68C69DE219AC83EE00882045 /* VmDetailCPUConfigVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailCPUConfigVC.h; sourceTree = "<group>"; };
+		68C69DE319AC83EE00882045 /* VmDetailCPUConfigVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailCPUConfigVC.m; sourceTree = "<group>"; };
+		68C69DE519AC840D00882045 /* VmDetailMemryConfigVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailMemryConfigVC.h; sourceTree = "<group>"; };
+		68C69DE619AC840D00882045 /* VmDetailMemryConfigVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailMemryConfigVC.m; sourceTree = "<group>"; };
 		8411FA1D199DE3A9002168F4 /* wincenterDemo01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wincenterDemo01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8411FA20199DE3A9002168F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8411FA22199DE3A9002168F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -543,6 +549,10 @@
 				84ECEC2519A58D350089F651 /* VmDetailPerformanceVC.m */,
 				84ECEC2719A58DAD0089F651 /* VmDetailSnapshootVC.h */,
 				84ECEC2819A58DAD0089F651 /* VmDetailSnapshootVC.m */,
+				68C69DE219AC83EE00882045 /* VmDetailCPUConfigVC.h */,
+				68C69DE319AC83EE00882045 /* VmDetailCPUConfigVC.m */,
+				68C69DE519AC840D00882045 /* VmDetailMemryConfigVC.h */,
+				68C69DE619AC840D00882045 /* VmDetailMemryConfigVC.m */,
 				8432461219AAE9DF007FD8DE /* VmNewVC.h */,
 				8432461319AAE9DF007FD8DE /* VmNewVC.m */,
 			);
@@ -757,6 +767,7 @@
 				8429143619A1F3B200F192EE /* StorageCollectionCell.m in Sources */,
 				8432461419AAE9DF007FD8DE /* VmNewVC.m in Sources */,
 				84C1F9D919A4430300B49166 /* DatacenterDetailPageVC.m in Sources */,
+				68C69DE419AC83EE00882045 /* VmDetailCPUConfigVC.m in Sources */,
 				842914FB19A2379800F192EE /* VmCollectionHeader.m in Sources */,
 				8429141719A1A9A300F192EE /* HostDetailNicOutsideVC.m in Sources */,
 				84F5976219A2F6A900D99DE9 /* VmDetailDiskFooter.m in Sources */,
@@ -807,6 +818,7 @@
 				84F5975919A2F64D00D99DE9 /* VmDetailNetworkVC.m in Sources */,
 				8429140219A1A39C00F192EE /* HostDetailNetworkOutsideCell.m in Sources */,
 				8411FA2D199DE3A9002168F4 /* main.m in Sources */,
+				68C69DE719AC840D00882045 /* VmDetailMemryConfigVC.m in Sources */,
 				84ECEC2C19A591EE0089F651 /* PoolDetailInfoVC.m in Sources */,
 				842914D219A225B500F192EE /* PoolDetailPageVC.m in Sources */,
 				8411FA66199DECDC002168F4 /* PoolCollectionHeader.m in Sources */,

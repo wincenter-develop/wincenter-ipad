@@ -61,21 +61,24 @@
     NetworkOutsideCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NetworkOutsideCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.backgroundColor = (indexPath.row%2==0) ? ([UIColor clearColor]) : ([UIColor colorWithRed:116/255.0 green:116/255.0 blue:116/255.0 alpha:1]);
+    cell.backgroundColor = (indexPath.row%2==1) ? ([UIColor clearColor]) : ([UIColor colorWithRed:116/255.0 green:116/255.0 blue:116/255.0 alpha:1]);
     return cell;
 }
 //-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
 //    return @"网络名称 （Vlan：20   IP段：192.168.1.1/28 IP总数：30 IP可用数：10）";
 //}
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 30;
+    return 44;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 25;
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UIView *header = [UIView new];
     header.backgroundColor = [UIColor clearColor];
-    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(15, 0, 500, 30)];
+    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 600, 44)];
     title.text = @"网络名称 （Vlan：20   IP段：192.168.1.1/28 IP总数：30 IP可用数：10）";
-    title.textColor = [UIColor grayColor];
+    title.textColor = [UIColor whiteColor];
     [header addSubview:title];
     return header;
 }

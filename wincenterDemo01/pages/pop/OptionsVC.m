@@ -43,9 +43,4 @@
 - (IBAction)close:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-- (IBAction)logoutAction:(id)sender {
-    [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"LoginVC"] animated:YES];
-    
-}
-
 @end

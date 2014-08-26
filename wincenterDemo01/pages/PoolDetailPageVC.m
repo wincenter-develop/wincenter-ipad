@@ -7,10 +7,14 @@
 //
 
 #import "PoolDetailPageVC.h"
+#import "PoolDetailContainerVC.h"
 
 @interface PoolDetailPageVC ()
 
 @property NSArray *poolDetailPages;
+@property int _previousIndex;
+@property int _selectedIndex;
+@property int showIndex;
 
 @end
 
@@ -34,15 +38,17 @@
         [self.storyboard instantiateViewControllerWithIdentifier:@"StorageCollectionVCFull"]
     ];
     [self setViewControllers:@[self.poolDetailPages[0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+    self._previousIndex = 0;
     self.dataSource = self;
     self.delegate = self;
-//    for(UIView *subview in self.view.subviews){
-//        if([subview isKindOfClass:[UIScrollView class]]){
-//             ((UIScrollView *)subview).pagingEnabled = false;
-//        }
-//    }
+
    
 
+}
+
+- (void) switchPage:(int)index{
+    [self setViewControllers:@[self.poolDetailPages[index]] direction:(index>self._previousIndex ? UIPageViewControllerNavigationDirectionForward : UIPageViewControllerNavigationDirectionReverse) animated:YES completion:nil];
+    self._previousIndex = index;
 }
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController{
     NSUInteger index =  [self.poolDetailPages indexOfObject:viewController];
@@ -71,6 +77,15 @@
     return 0;
 }
 
+- (void)pageViewController:(UIPageViewController *)pageViewController willTransitionToViewControllers:(NSArray *)pendingViewControllers{
+    self._selectedIndex = [self.poolDetailPages indexOfObject:pendingViewControllers[0]];
+}
+- (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed{
+    if(completed){
+        self.showIndex = self._selectedIndex;
+        [((PoolDetailContainerVC*)self.parentViewController) switchButtonSelected:self._selectedIndex];
+    }
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

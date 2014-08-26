@@ -69,12 +69,12 @@
     
 }
 //控制是否出圆点切换
-//- (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController{
-//    return self.HostDetailNicPages.count;
-//}
-//- (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController {
-//    return 0;
-//}
+- (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController{
+    return self.HostDetailNicPages.count;
+}
+- (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController {
+    return 0;
+}
 
 - (void)pageViewController:(UIPageViewController *)pageViewController willTransitionToViewControllers:(NSArray *)pendingViewControllers{
     self._selectedIndex = [self.HostDetailNicPages indexOfObject:pendingViewControllers[0]];

@@ -37,6 +37,13 @@
 - (IBAction)gobackAction:(id)sender {
       [self.navigationController popViewControllerAnimated:YES];
 }
+- (IBAction)showControlBtns:(id)sender {
+    BOOL isHide = self.vmControlBtns.hidden;
+    self.vmControlBtns.hidden = isHide == YES ? NO : YES;
+ //   [self.view addSubview:self.vmControlBtns];
+//    self.vmControlBtns.frame.origin.x = 922;
+//    self.vmControlBtns.frame.origin.y = 22;
+}
 
 /*
 #pragma mark - Navigation

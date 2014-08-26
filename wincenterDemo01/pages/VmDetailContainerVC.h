@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface VmDetailContainerVC : UIViewController
+@property (strong, nonatomic) IBOutlet UIView *vmControlBtns;
 
 @end

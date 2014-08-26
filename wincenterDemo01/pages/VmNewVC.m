@@ -43,11 +43,11 @@
         [self.networkData addObject:[NSString stringWithFormat:@"网络－%d",i]];
     }
 
-    self.vmTemp.text = self.tempData[0];
-
-    self.vmSize.text = self.sizeData[0];
-
-    self.vmNetwork.text = self.networkData[0];
+//    self.vmTemp.text = self.tempData[0];
+//
+//    self.vmSize.text = self.sizeData[0];
+//
+//    self.vmNetwork.text = self.networkData[0];
 
 }
 
@@ -81,6 +81,7 @@
     return @"";
     
 }
+
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
 
     switch (component) {

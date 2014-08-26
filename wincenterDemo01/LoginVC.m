@@ -39,7 +39,7 @@
     
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -48,6 +48,18 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
+    
+    //login validation; return No if validation failed;
+    
+    return YES;
+}
+
+- (IBAction)backToLogin:(UIStoryboardSegue*)segue{
+    
+}
+
+
 
 @end

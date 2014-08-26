@@ -10,4 +10,6 @@
 
 @interface PoolDetailPageVC : UIPageViewController
 
+- (void) switchPage:(int)index;
+
 @end

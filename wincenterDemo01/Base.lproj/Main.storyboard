@@ -4521,12 +4521,13 @@
                                 <color key="backgroundColor" red="0.16667238810000001" green="1" blue="0.24229795500000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Wgx-R9-HMc">
-                                <rect key="frame" x="412" y="128" width="200" height="29"/>
+                                <rect key="frame" x="804" y="126" width="200" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="单网络适配器"/>
                                     <segment title="聚合网络适配器"/>
                                 </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="segmentAction:" destination="08A-Tx-hSE" eventType="valueChanged" id="ciY-ZE-tcR"/>
                                 </connections>
@@ -4607,12 +4608,13 @@
                                 <color key="backgroundColor" red="0.16667238810000001" green="1" blue="0.24229795500000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Bmr-ql-yOt">
-                                <rect key="frame" x="432" y="125" width="161" height="29"/>
+                                <rect key="frame" x="843" y="125" width="161" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="内部网络" width="80"/>
                                     <segment title="外部网络" width="80"/>
                                 </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="segmentAction:" destination="IVe-5b-eG0" eventType="valueChanged" id="rrC-mE-gMp"/>
                                 </connections>
@@ -6052,7 +6054,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="AEE-X5-jRR" kind="embed" id="aOC-7O-CN6"/>
+                                    <segue destination="AEE-X5-jRR" kind="embed" identifier="toPageVC" id="aOC-7O-CN6"/>
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WPO-kV-WLf">
@@ -6116,6 +6118,43 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9MP-IO-QpS">
+                                <rect key="frame" x="893" y="192" width="111" height="384"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oc3-IA-WWC">
+                                        <rect key="frame" x="32" y="20" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="switchPage:" destination="y5f-Jh-nfH" eventType="touchUpInside" id="QOa-jf-SYD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiV-pn-paL">
+                                        <rect key="frame" x="32" y="177" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="switchPage:" destination="y5f-Jh-nfH" eventType="touchUpInside" id="itM-Y3-osT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMr-dM-99V">
+                                        <rect key="frame" x="32" y="334" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="switchPage:" destination="y5f-Jh-nfH" eventType="touchUpInside" id="aGk-yy-uVh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -6128,6 +6167,11 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="button1" destination="oc3-IA-WWC" id="YvI-cJ-92m"/>
+                        <outlet property="button2" destination="EiV-pn-paL" id="FAV-if-JJK"/>
+                        <outlet property="button3" destination="MMr-dM-99V" id="vOZ-Hi-dq5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ae6-ip-qml" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="4nT-Os-oSH" userLabel="Exit" sceneMemberID="exit"/>
@@ -7391,8 +7435,8 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="ID4-Zj-INj"/>
-        <segue reference="ohd-f6-Vnc"/>
         <segue reference="EuJ-h6-fcO"/>
+        <segue reference="gJ2-cV-FVA"/>
         <segue reference="FRz-kX-7gf"/>
     </inferredMetricsTieBreakers>
 </document>

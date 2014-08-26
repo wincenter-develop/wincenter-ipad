@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6895B23F19AC75180024FF40 /* ControlRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895B23E19AC75180024FF40 /* ControlRecordVC.m */; };
+		6895B24219AC75370024FF40 /* ControlRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895B24119AC75370024FF40 /* ControlRecordCell.m */; };
+		6895B24519AC771B0024FF40 /* ControlRecordCellForTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895B24419AC771B0024FF40 /* ControlRecordCellForTime.m */; };
+		6895B24819AC791A0024FF40 /* WarningInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895B24719AC791A0024FF40 /* WarningInfoCell.m */; };
+		6895B24B19AC79590024FF40 /* WarningInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895B24A19AC79590024FF40 /* WarningInfoVC.m */; };
+		6895B24E19AC79810024FF40 /* WarningInfoCellForTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895B24D19AC79810024FF40 /* WarningInfoCellForTime.m */; };
 		8411FA21199DE3A9002168F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8411FA20199DE3A9002168F4 /* Foundation.framework */; };
 		8411FA23199DE3A9002168F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8411FA22199DE3A9002168F4 /* CoreGraphics.framework */; };
 		8411FA25199DE3A9002168F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8411FA24199DE3A9002168F4 /* UIKit.framework */; };
@@ -106,6 +112,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6895B23D19AC75180024FF40 /* ControlRecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlRecordVC.h; sourceTree = "<group>"; };
+		6895B23E19AC75180024FF40 /* ControlRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlRecordVC.m; sourceTree = "<group>"; };
+		6895B24019AC75370024FF40 /* ControlRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlRecordCell.h; sourceTree = "<group>"; };
+		6895B24119AC75370024FF40 /* ControlRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlRecordCell.m; sourceTree = "<group>"; };
+		6895B24319AC771B0024FF40 /* ControlRecordCellForTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlRecordCellForTime.h; sourceTree = "<group>"; };
+		6895B24419AC771B0024FF40 /* ControlRecordCellForTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlRecordCellForTime.m; sourceTree = "<group>"; };
+		6895B24619AC791A0024FF40 /* WarningInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WarningInfoCell.h; sourceTree = "<group>"; };
+		6895B24719AC791A0024FF40 /* WarningInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarningInfoCell.m; sourceTree = "<group>"; };
+		6895B24919AC79590024FF40 /* WarningInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WarningInfoVC.h; sourceTree = "<group>"; };
+		6895B24A19AC79590024FF40 /* WarningInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarningInfoVC.m; sourceTree = "<group>"; };
+		6895B24C19AC79810024FF40 /* WarningInfoCellForTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WarningInfoCellForTime.h; sourceTree = "<group>"; };
+		6895B24D19AC79810024FF40 /* WarningInfoCellForTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarningInfoCellForTime.m; sourceTree = "<group>"; };
 		8411FA1D199DE3A9002168F4 /* wincenterDemo01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wincenterDemo01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8411FA20199DE3A9002168F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8411FA22199DE3A9002168F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -536,6 +554,18 @@
 			children = (
 				8432460F19AAD0B5007FD8DE /* OptionsVC.h */,
 				8432461019AAD0B5007FD8DE /* OptionsVC.m */,
+				6895B23D19AC75180024FF40 /* ControlRecordVC.h */,
+				6895B23E19AC75180024FF40 /* ControlRecordVC.m */,
+				6895B24019AC75370024FF40 /* ControlRecordCell.h */,
+				6895B24119AC75370024FF40 /* ControlRecordCell.m */,
+				6895B24319AC771B0024FF40 /* ControlRecordCellForTime.h */,
+				6895B24419AC771B0024FF40 /* ControlRecordCellForTime.m */,
+				6895B24919AC79590024FF40 /* WarningInfoVC.h */,
+				6895B24A19AC79590024FF40 /* WarningInfoVC.m */,
+				6895B24619AC791A0024FF40 /* WarningInfoCell.h */,
+				6895B24719AC791A0024FF40 /* WarningInfoCell.m */,
+				6895B24C19AC79810024FF40 /* WarningInfoCellForTime.h */,
+				6895B24D19AC79810024FF40 /* WarningInfoCellForTime.m */,
 			);
 			path = pop;
 			sourceTree = "<group>";
@@ -718,6 +748,7 @@
 			files = (
 				84F5977119A3258900D99DE9 /* HostDetailNetworkPageVC.m in Sources */,
 				842914E519A2308E00F192EE /* BusinessCollectionFooter.m in Sources */,
+				6895B24219AC75370024FF40 /* ControlRecordCell.m in Sources */,
 				8411FA6A199DEEE9002168F4 /* HostCollectionVC.m in Sources */,
 				8411FA78199E0438002168F4 /* NetworkOutsideVC.m in Sources */,
 				8429143919A1F40000F192EE /* StorageCollectionHeader.m in Sources */,
@@ -736,13 +767,16 @@
 				84ECEC3319A5A3180089F651 /* HostDetailNetworkInsideFooter.m in Sources */,
 				842913FC19A1A32A00F192EE /* HostDetailNetworkInsideVC.m in Sources */,
 				8411FA84199E04EC002168F4 /* NetworkContainerVC.m in Sources */,
+				6895B24B19AC79590024FF40 /* WarningInfoVC.m in Sources */,
 				84ECEC4619A603E80089F651 /* StorageDetailDiskHeader.m in Sources */,
+				6895B23F19AC75180024FF40 /* ControlRecordVC.m in Sources */,
 				8429143C19A1F5CB00F192EE /* StorageCollectionFooter.m in Sources */,
 				84ECEC2619A58D350089F651 /* VmDetailPerformanceVC.m in Sources */,
 				84C1F9F919A4883A00B49166 /* HostDetailContainerVC.m in Sources */,
 				8429140519A1A3E600F192EE /* HostDetailNetworkOutsideVC.m in Sources */,
 				8429143319A1F39C00F192EE /* StorageCollectionVC.m in Sources */,
 				8411FA59199DE834002168F4 /* DatacenterDetailInfoVC.m in Sources */,
+				6895B24519AC771B0024FF40 /* ControlRecordCellForTime.m in Sources */,
 				8429140819A1A70000F192EE /* HostDetailNetworkContainerVC.m in Sources */,
 				842914FE19A237A700F192EE /* VmCollectionFooter.m in Sources */,
 				84ECEC2319A58C460089F651 /* VmDetailInfoVC.m in Sources */,
@@ -750,6 +784,7 @@
 				8411FA8D199E33F1002168F4 /* HostDetailPerformanceVC.m in Sources */,
 				84ECEC4319A603A40089F651 /* StorageDetailDiskFooter.m in Sources */,
 				8429144519A1F90100F192EE /* StorageDetailDiskCell.m in Sources */,
+				6895B24819AC791A0024FF40 /* WarningInfoCell.m in Sources */,
 				8411FA6D199DEF03002168F4 /* HostCollectionCell.m in Sources */,
 				84C1F9FC19A49ACA00B49166 /* VmDetailContainerVC.m in Sources */,
 				8411FA31199DE3A9002168F4 /* AppDelegate.m in Sources */,
@@ -757,6 +792,7 @@
 				842914DF19A22F7600F192EE /* BusinessCollectionCell.m in Sources */,
 				84ECEC3819A5D1840089F651 /* HostDetailNicPageVC.m in Sources */,
 				8432461119AAD0B5007FD8DE /* OptionsVC.m in Sources */,
+				6895B24E19AC79810024FF40 /* WarningInfoCellForTime.m in Sources */,
 				84F5975F19A2F69900D99DE9 /* VmDetailDiskHeader.m in Sources */,
 				84F5976519A2F6BF00D99DE9 /* VmDetailNetworkHeader.m in Sources */,
 				84C1FA0519A4C17700B49166 /* PoolCollectionFooter.m in Sources */,

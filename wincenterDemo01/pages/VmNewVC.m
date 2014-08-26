@@ -63,7 +63,19 @@
     return @"";
     
 }
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+//    switch (component) {
+//        case 0:
+//            self.vmTemp.text = pickerView ;
+//        case 1:
+//            return[ NSString stringWithFormat:@"memory-%d", row];
+//        case 2:
+//            return[ NSString stringWithFormat:@"network-%d", row];
+//        default:
+//            break;
+//    }
 
+}
 - (IBAction)close:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }

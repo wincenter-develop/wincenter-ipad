@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6815D23819AD6F3000E49F50 /* VmMigrateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6815D23719AD6F3000E49F50 /* VmMigrateVC.m */; };
+		6815D23B19AD7D7000E49F50 /* VmMigrateSelectHostVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6815D23A19AD7D7000E49F50 /* VmMigrateSelectHostVC.m */; };
+		6815D23E19AD7F0600E49F50 /* VmMigrateSelectHostListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6815D23D19AD7F0600E49F50 /* VmMigrateSelectHostListVC.m */; };
+		6815D24119AD831100E49F50 /* VmMigrateSelectHostListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6815D24019AD831100E49F50 /* VmMigrateSelectHostListCell.m */; };
 		6895B23F19AC75180024FF40 /* ControlRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895B23E19AC75180024FF40 /* ControlRecordVC.m */; };
 		6895B24219AC75370024FF40 /* ControlRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895B24119AC75370024FF40 /* ControlRecordCell.m */; };
 		6895B24519AC771B0024FF40 /* ControlRecordCellForTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895B24419AC771B0024FF40 /* ControlRecordCellForTime.m */; };
@@ -117,6 +120,12 @@
 /* Begin PBXFileReference section */
 		6815D23619AD6F3000E49F50 /* VmMigrateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmMigrateVC.h; sourceTree = "<group>"; };
 		6815D23719AD6F3000E49F50 /* VmMigrateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmMigrateVC.m; sourceTree = "<group>"; };
+		6815D23919AD7D7000E49F50 /* VmMigrateSelectHostVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmMigrateSelectHostVC.h; sourceTree = "<group>"; };
+		6815D23A19AD7D7000E49F50 /* VmMigrateSelectHostVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmMigrateSelectHostVC.m; sourceTree = "<group>"; };
+		6815D23C19AD7F0600E49F50 /* VmMigrateSelectHostListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmMigrateSelectHostListVC.h; sourceTree = "<group>"; };
+		6815D23D19AD7F0600E49F50 /* VmMigrateSelectHostListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmMigrateSelectHostListVC.m; sourceTree = "<group>"; };
+		6815D23F19AD831100E49F50 /* VmMigrateSelectHostListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmMigrateSelectHostListCell.h; sourceTree = "<group>"; };
+		6815D24019AD831100E49F50 /* VmMigrateSelectHostListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmMigrateSelectHostListCell.m; sourceTree = "<group>"; };
 		6895B23D19AC75180024FF40 /* ControlRecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlRecordVC.h; sourceTree = "<group>"; };
 		6895B23E19AC75180024FF40 /* ControlRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlRecordVC.m; sourceTree = "<group>"; };
 		6895B24019AC75370024FF40 /* ControlRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlRecordCell.h; sourceTree = "<group>"; };
@@ -560,6 +569,12 @@
 				8432461319AAE9DF007FD8DE /* VmNewVC.m */,
 				6815D23619AD6F3000E49F50 /* VmMigrateVC.h */,
 				6815D23719AD6F3000E49F50 /* VmMigrateVC.m */,
+				6815D23919AD7D7000E49F50 /* VmMigrateSelectHostVC.h */,
+				6815D23A19AD7D7000E49F50 /* VmMigrateSelectHostVC.m */,
+				6815D23C19AD7F0600E49F50 /* VmMigrateSelectHostListVC.h */,
+				6815D23D19AD7F0600E49F50 /* VmMigrateSelectHostListVC.m */,
+				6815D23F19AD831100E49F50 /* VmMigrateSelectHostListCell.h */,
+				6815D24019AD831100E49F50 /* VmMigrateSelectHostListCell.m */,
 			);
 			name = vm;
 			sourceTree = "<group>";
@@ -769,6 +784,7 @@
 				8429143919A1F40000F192EE /* StorageCollectionHeader.m in Sources */,
 				8429140E19A1A94B00F192EE /* HostDetailNicInsideVC.m in Sources */,
 				8411FA8A199E33AC002168F4 /* HostDetailInfoVC.m in Sources */,
+				6815D24119AD831100E49F50 /* VmMigrateSelectHostListCell.m in Sources */,
 				8429143619A1F3B200F192EE /* StorageCollectionCell.m in Sources */,
 				8432461419AAE9DF007FD8DE /* VmNewVC.m in Sources */,
 				84C1F9D919A4430300B49166 /* DatacenterDetailPageVC.m in Sources */,
@@ -786,6 +802,7 @@
 				8411FA84199E04EC002168F4 /* NetworkContainerVC.m in Sources */,
 				6895B24B19AC79590024FF40 /* WarningInfoVC.m in Sources */,
 				84ECEC4619A603E80089F651 /* StorageDetailDiskHeader.m in Sources */,
+				6815D23E19AD7F0600E49F50 /* VmMigrateSelectHostListVC.m in Sources */,
 				6895B23F19AC75180024FF40 /* ControlRecordVC.m in Sources */,
 				8429143C19A1F5CB00F192EE /* StorageCollectionFooter.m in Sources */,
 				84ECEC2619A58D350089F651 /* VmDetailPerformanceVC.m in Sources */,
@@ -803,6 +820,7 @@
 				8429144519A1F90100F192EE /* StorageDetailDiskCell.m in Sources */,
 				6895B24819AC791A0024FF40 /* WarningInfoCell.m in Sources */,
 				8411FA6D199DEF03002168F4 /* HostCollectionCell.m in Sources */,
+				6815D23B19AD7D7000E49F50 /* VmMigrateSelectHostVC.m in Sources */,
 				84C1F9FC19A49ACA00B49166 /* VmDetailContainerVC.m in Sources */,
 				8411FA31199DE3A9002168F4 /* AppDelegate.m in Sources */,
 				84F5976819A2F6CC00D99DE9 /* VmDetailNetworkFooter.m in Sources */,

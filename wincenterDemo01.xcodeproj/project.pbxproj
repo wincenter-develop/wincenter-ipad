@@ -78,6 +78,8 @@
 		842914FE19A237A700F192EE /* VmCollectionFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 842914FD19A237A700F192EE /* VmCollectionFooter.m */; };
 		8432461119AAD0B5007FD8DE /* OptionsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8432461019AAD0B5007FD8DE /* OptionsVC.m */; };
 		8432461419AAE9DF007FD8DE /* VmNewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8432461319AAE9DF007FD8DE /* VmNewVC.m */; };
+		8489354019ADC00600E9BC7A /* HostMoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8489353F19ADC00600E9BC7A /* HostMoreVC.m */; };
+		8489354319ADC32300E9BC7A /* PoolMoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8489354219ADC32300E9BC7A /* PoolMoreVC.m */; };
 		84C1F9D919A4430300B49166 /* DatacenterDetailPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1F9D819A4430300B49166 /* DatacenterDetailPageVC.m */; };
 		84C1F9EA19A4530500B49166 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1F9E919A4530500B49166 /* LoginVC.m */; };
 		84C1F9F919A4883A00B49166 /* HostDetailContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1F9F819A4883A00B49166 /* HostDetailContainerVC.m */; };
@@ -252,6 +254,10 @@
 		8432461019AAD0B5007FD8DE /* OptionsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsVC.m; sourceTree = "<group>"; };
 		8432461219AAE9DF007FD8DE /* VmNewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmNewVC.h; sourceTree = "<group>"; };
 		8432461319AAE9DF007FD8DE /* VmNewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmNewVC.m; sourceTree = "<group>"; };
+		8489353E19ADC00600E9BC7A /* HostMoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostMoreVC.h; sourceTree = "<group>"; };
+		8489353F19ADC00600E9BC7A /* HostMoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostMoreVC.m; sourceTree = "<group>"; };
+		8489354119ADC32300E9BC7A /* PoolMoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolMoreVC.h; sourceTree = "<group>"; };
+		8489354219ADC32300E9BC7A /* PoolMoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolMoreVC.m; sourceTree = "<group>"; };
 		84C1F9D719A4430300B49166 /* DatacenterDetailPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterDetailPageVC.h; sourceTree = "<group>"; };
 		84C1F9D819A4430300B49166 /* DatacenterDetailPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterDetailPageVC.m; sourceTree = "<group>"; };
 		84C1F9E819A4530500B49166 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginVC.h; path = ../LoginVC.h; sourceTree = "<group>"; };
@@ -467,6 +473,8 @@
 				84ECEC2B19A591EE0089F651 /* PoolDetailInfoVC.m */,
 				842914D019A225B500F192EE /* PoolDetailPageVC.h */,
 				842914D119A225B500F192EE /* PoolDetailPageVC.m */,
+				8489354119ADC32300E9BC7A /* PoolMoreVC.h */,
+				8489354219ADC32300E9BC7A /* PoolMoreVC.m */,
 			);
 			name = pool;
 			sourceTree = "<group>";
@@ -490,6 +498,8 @@
 				8411FA89199E33AC002168F4 /* HostDetailInfoVC.m */,
 				8411FA8B199E33F1002168F4 /* HostDetailPerformanceVC.h */,
 				8411FA8C199E33F1002168F4 /* HostDetailPerformanceVC.m */,
+				8489353E19ADC00600E9BC7A /* HostMoreVC.h */,
+				8489353F19ADC00600E9BC7A /* HostMoreVC.m */,
 			);
 			name = host;
 			sourceTree = "<group>";
@@ -794,6 +804,7 @@
 				6895B24219AC75370024FF40 /* ControlRecordCell.m in Sources */,
 				8411FA6A199DEEE9002168F4 /* HostCollectionVC.m in Sources */,
 				8411FA78199E0438002168F4 /* NetworkOutsideVC.m in Sources */,
+				8489354319ADC32300E9BC7A /* PoolMoreVC.m in Sources */,
 				8429143919A1F40000F192EE /* StorageCollectionHeader.m in Sources */,
 				8429140E19A1A94B00F192EE /* HostDetailNicInsideVC.m in Sources */,
 				8411FA8A199E33AC002168F4 /* HostDetailInfoVC.m in Sources */,
@@ -809,6 +820,7 @@
 				84F5975619A2F62B00D99DE9 /* VmDetailDiskCell.m in Sources */,
 				8429140B19A1A91600F192EE /* HostDetailNicContainerVC.m in Sources */,
 				84ECEC2919A58DAD0089F651 /* VmDetailSnapshootVC.m in Sources */,
+				8489354019ADC00600E9BC7A /* HostMoreVC.m in Sources */,
 				84ECEC3319A5A3180089F651 /* HostDetailNetworkInsideFooter.m in Sources */,
 				842913FC19A1A32A00F192EE /* HostDetailNetworkInsideVC.m in Sources */,
 				6815D23819AD6F3000E49F50 /* VmMigrateVC.m in Sources */,

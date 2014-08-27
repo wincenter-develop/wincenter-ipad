@@ -2019,7 +2019,7 @@
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="75w-9V-Mda" customClass="StorageDetailDiskVC" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="6lE-q6-lhO">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="483"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -2117,7 +2117,7 @@
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StorageDetailDiskHeader" id="CKG-Oz-QkI" customClass="StorageDetailDiskHeader">
-                            <rect key="frame" x="0.0" y="0.0" width="768" height="50"/>
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="50"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="虚拟磁盘" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8P9-xh-vek">
@@ -2130,7 +2130,7 @@
                             </subviews>
                         </collectionReusableView>
                         <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StorageDetailDiskFooter" id="Lbs-9n-2N9" customClass="StorageDetailDiskFooter">
-                            <rect key="frame" x="0.0" y="164" width="768" height="30"/>
+                            <rect key="frame" x="0.0" y="164" width="1024" height="30"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icm-GQ-umw">
@@ -3657,6 +3657,69 @@
             </objects>
             <point key="canvasLocation" x="6917" y="3807"/>
         </scene>
+        <!--Host MoreVC-->
+        <scene sceneID="cUS-dD-PoA">
+            <objects>
+                <viewController id="lZZ-y4-GdN" customClass="HostMoreVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Hl-9Q-ht7"/>
+                        <viewControllerLayoutGuide type="bottom" id="llY-BI-1xE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c1g-N2-96W">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="背景2" translatesAutoresizingMaskIntoConstraints="NO" id="Xno-Q0-muP">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7vY-TF-oq8">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="P78-Eu-VQk" kind="embed" id="tu1-RC-KkO"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A2L-0I-p6D">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="资源池A——全部物理机" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMK-Om-rGe">
+                                        <rect key="frame" x="373" y="26" width="279" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzA-JU-abG">
+                                        <rect key="frame" x="20" y="0.0" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="&lt;">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backAction:" destination="y5f-Jh-nfH" eventType="touchUpInside" id="glz-b7-3lT"/>
+                                            <action selector="backAction:" destination="lZZ-y4-GdN" eventType="touchUpInside" id="oYc-Ql-50B"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jzt-AL-RX2"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cQ-hp-Qf5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1787" y="-2261"/>
+        </scene>
         <!--Host CollectionVC-->
         <scene sceneID="oZV-yv-djQ">
             <objects>
@@ -3787,6 +3850,9 @@
                                     <state key="normal" title="查看更多...">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <connections>
+                                        <segue destination="lZZ-y4-GdN" kind="push" id="yOA-8l-jkK"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </collectionReusableView>
@@ -4604,7 +4670,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zvi-EX-nsZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6859" y="-1824"/>
+            <point key="canvasLocation" x="7838" y="-1824"/>
         </scene>
         <!--Host Detail PerformanceVC-->
         <scene sceneID="xZj-yq-WfE">
@@ -6064,54 +6130,68 @@
             </objects>
             <point key="canvasLocation" x="5093" y="6423"/>
         </scene>
-        <!--Collection View Controller-->
-        <scene sceneID="6vu-P3-e7H">
+        <!--Pool MoreVC-->
+        <scene sceneID="WeF-c6-RtX">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="kK5-MJ-ZvS" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="ban-jr-yXH">
-                        <rect key="frame" x="0.0" y="0.0" width="773" height="688"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <viewController id="OXf-dC-DKU" customClass="PoolMoreVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cl0-t7-6fF"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ZP-yV-Ces"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZVi-Nv-yuX">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="背景2" translatesAutoresizingMaskIntoConstraints="NO" id="Ffd-hJ-ugh">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NwN-ZG-WOG">
+                                <rect key="frame" x="0.0" y="83" width="1024" height="685"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="p4i-t6-NQu" kind="embed" id="lex-xk-yAl"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9aq-us-h9x">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="全部资源池" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYb-Cm-GZ1">
+                                        <rect key="frame" x="373" y="26" width="279" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTC-JP-Gor">
+                                        <rect key="frame" x="20" y="0.0" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="&lt;">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backAction:" destination="lZZ-y4-GdN" eventType="touchUpInside" id="kT1-sP-FiY"/>
+                                            <action selector="backAction:" destination="y5f-Jh-nfH" eventType="touchUpInside" id="mcU-zf-bwj"/>
+                                            <action selector="goback:" destination="OXf-dC-DKU" eventType="touchUpInside" id="i3K-0N-UfH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PrT-qi-mMt">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="50" height="50"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eEK-hP-adD">
-                                <rect key="frame" x="0.0" y="50" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jbU-MD-18Q">
-                            <rect key="frame" x="0.0" y="0.0" width="773" height="50"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                            <subviews>
-                                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a5m-Rt-8Cp">
-                                    <rect key="frame" x="0.0" y="0.0" width="773" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <items>
-                                        <navigationItem title="Title" id="aST-64-EWs"/>
-                                    </items>
-                                </navigationBar>
-                            </subviews>
-                        </collectionReusableView>
-                        <connections>
-                            <outlet property="dataSource" destination="kK5-MJ-ZvS" id="PGM-8w-oKx"/>
-                            <outlet property="delegate" destination="kK5-MJ-ZvS" id="aNe-di-KQw"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" id="Cey-gv-dEN"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sfy-Gf-3xb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xi2-ct-avf"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="50s-9d-eYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1402" y="-3928"/>
+            <point key="canvasLocation" x="1433" y="-4101"/>
         </scene>
         <!--Pool CollectionVC-->
         <scene sceneID="Emr-4u-G78">
@@ -6261,17 +6341,9 @@
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <connections>
-                                        <segue destination="kK5-MJ-ZvS" kind="push" id="c8s-ew-bqT"/>
+                                        <segue destination="OXf-dC-DKU" kind="push" id="2NP-5R-zJu"/>
                                     </connections>
                                 </button>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入名称" textAlignment="center" minimumFontSize="17" background="搜素框" translatesAutoresizingMaskIntoConstraints="NO" id="l0O-lA-vhm">
-                                    <rect key="frame" x="463" y="2" width="144" height="28"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </textField>
                             </subviews>
                         </collectionReusableView>
                         <connections>
@@ -7462,6 +7534,9 @@
                                     <state key="normal" title="查看更多...">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <connections>
+                                        <segue destination="lZZ-y4-GdN" kind="push" id="8xJ-s2-9Uu"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </collectionReusableView>
@@ -7478,7 +7553,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tz3-k2-z3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2061" y="-2159"/>
+            <point key="canvasLocation" x="3040" y="-2159"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XL4-hs-wgt">
@@ -7976,7 +8051,6 @@
         <image name="按键7" width="102" height="92"/>
         <image name="按键8" width="102" height="92"/>
         <image name="按键9" width="102" height="92"/>
-        <image name="搜素框" width="144" height="27"/>
         <image name="数据中心界面资源池卡片框" width="243" height="149"/>
         <image name="数据盘卡片框" width="246" height="100"/>
         <image name="新建虚拟机基础" width="64" height="58"/>
@@ -8018,9 +8092,12 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ID4-Zj-INj"/>
-        <segue reference="gJ2-cV-FVA"/>
+        <segue reference="e8l-6u-ART"/>
+        <segue reference="tu1-RC-KkO"/>
+        <segue reference="8xJ-s2-9Uu"/>
         <segue reference="FRz-kX-7gf"/>
+        <segue reference="lex-xk-yAl"/>
+        <segue reference="gJ2-cV-FVA"/>
         <segue reference="aDs-d2-keC"/>
     </inferredMetricsTieBreakers>
 </document>

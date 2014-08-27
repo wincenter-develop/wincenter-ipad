@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HostDetailPageVC : UIPageViewController
+@interface HostDetailPageVC : UIPageViewController<UIPageViewControllerDelegate,UIPageViewControllerDataSource>
+
+- (void) switchPage:(int)index;
 
 @end

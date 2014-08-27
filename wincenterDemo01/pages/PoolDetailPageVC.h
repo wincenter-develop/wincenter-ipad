@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PoolDetailPageVC : UIPageViewController
+@interface PoolDetailPageVC : UIPageViewController<UIPageViewControllerDataSource,UIPageViewControllerDelegate>
 
 - (void) switchPage:(int)index;
 

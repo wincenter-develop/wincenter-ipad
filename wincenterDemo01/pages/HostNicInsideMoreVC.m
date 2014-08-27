@@ -1,18 +1,18 @@
 //
-//  HostNetworkMoreVC.m
+//  HostNicMoreVC.m
 //  wincenterDemo01
 //
 //  Created by huadi on 14-8-27.
 //  Copyright (c) 2014年 huadi. All rights reserved.
 //
 
-#import "HostNetworkMoreVC.h"
+#import "HostNicInsideMoreVC.h"
 
-@interface HostNetworkMoreVC ()
+@interface HostNicInsideMoreVC ()
 
 @end
 
-@implementation HostNetworkMoreVC
+@implementation HostNicInsideMoreVC
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

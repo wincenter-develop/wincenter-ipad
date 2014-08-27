@@ -5194,6 +5194,42 @@
             </objects>
             <point key="canvasLocation" x="9323" y="2167"/>
         </scene>
+        <!--Host Network Outside MoreVC-->
+        <scene sceneID="Jn4-rj-GFx">
+            <objects>
+                <viewController id="H6S-Ma-eSD" customClass="HostNetworkOutsideMoreVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fAs-3A-vp6"/>
+                        <viewControllerLayoutGuide type="bottom" id="d0x-cP-N88"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jnb-Ud-OKf">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="背景2" translatesAutoresizingMaskIntoConstraints="NO" id="CLC-UV-oJn">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i9c-7A-lbx">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="3dX-Ni-0UW" kind="embed" id="VhO-Ft-3Y3"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UXV-Kl-tGi"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wvI-Wy-AJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10263" y="358"/>
+        </scene>
         <!--Host Detail Nic InsideVC-->
         <scene sceneID="T6f-4S-oeW">
             <objects>
@@ -5342,7 +5378,7 @@
             <objects>
                 <collectionViewController storyboardIdentifier="HostDetailNetworkInside" autoresizesArchivedViewToFullSize="NO" id="Tzx-DW-iU2" customClass="HostDetailNetworkInsideVC" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="IDG-U3-jba">
-                        <rect key="frame" x="0.0" y="0.0" width="984" height="555"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -5470,7 +5506,7 @@
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HostDetailNetworkInsideFooter" id="7y2-9k-XUU" customClass="HostDetailNetworkInsideFooter">
-                            <rect key="frame" x="0.0" y="220" width="984" height="50"/>
+                            <rect key="frame" x="0.0" y="220" width="1024" height="50"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIM-5e-VeC">
@@ -5479,6 +5515,9 @@
                                     <state key="normal" title="查看更多...">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <connections>
+                                        <segue destination="LX8-wZ-xHM" kind="push" id="URQ-qu-sLV"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </collectionReusableView>
@@ -5492,14 +5531,50 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H3H-pv-VDu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9210" y="-265"/>
+            <point key="canvasLocation" x="9002" y="-547"/>
+        </scene>
+        <!--Host Network Inside MoreVC-->
+        <scene sceneID="gcW-Sz-dQE">
+            <objects>
+                <viewController id="LX8-wZ-xHM" customClass="HostNetworkInsideMoreVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LAU-BR-xAn"/>
+                        <viewControllerLayoutGuide type="bottom" id="gzr-WT-Rtv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ad8-kE-2pW">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="背景2" translatesAutoresizingMaskIntoConstraints="NO" id="syu-de-b3q">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vlp-g6-mkD">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="Tzx-DW-iU2" kind="embed" id="Ebn-qo-MVF"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9vk-aS-4zg"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6WN-s5-1yr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10229" y="-518"/>
         </scene>
         <!--Host Detail Network OutsideVC-->
         <scene sceneID="Hgs-92-iN4">
             <objects>
                 <collectionViewController storyboardIdentifier="HostDetailNetworkOutside" autoresizesArchivedViewToFullSize="NO" id="3dX-Ni-0UW" customClass="HostDetailNetworkOutsideVC" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="wUL-NN-gHH">
-                        <rect key="frame" x="0.0" y="0.0" width="984" height="555"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -5627,7 +5702,7 @@
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HostDetailNetworkOutsideFooter" id="tq4-bF-lfR" customClass="HostDetailNetworkOutsideFooter">
-                            <rect key="frame" x="0.0" y="220" width="984" height="50"/>
+                            <rect key="frame" x="0.0" y="220" width="1024" height="50"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffp-xH-IYy">
@@ -5636,6 +5711,9 @@
                                     <state key="normal" title="查看更多...">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <connections>
+                                        <segue destination="H6S-Ma-eSD" kind="push" id="RZn-62-65l"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </collectionReusableView>
@@ -5649,7 +5727,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sZL-yx-TIv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9226" y="417"/>
+            <point key="canvasLocation" x="9144" y="377"/>
         </scene>
         <!--Network ContainerVC-->
         <scene sceneID="lDF-HQ-faj">
@@ -8288,6 +8366,8 @@
         <segue reference="FRz-kX-7gf"/>
         <segue reference="oml-TE-V5k"/>
         <segue reference="g4z-PS-9fv"/>
+        <segue reference="Ebn-qo-MVF"/>
+        <segue reference="VhO-Ft-3Y3"/>
         <segue reference="8xJ-s2-9Uu"/>
         <segue reference="tu1-RC-KkO"/>
         <segue reference="aDs-d2-keC"/>

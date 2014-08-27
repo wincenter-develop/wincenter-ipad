@@ -1,5 +1,5 @@
 //
-//  HostNetworkMoreVC.h
+//  HostNicMoreVC.h
 //  wincenterDemo01
 //
 //  Created by huadi on 14-8-27.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HostNetworkMoreVC : UIViewController
+@interface HostNicInsideMoreVC : UIViewController
 
 @end

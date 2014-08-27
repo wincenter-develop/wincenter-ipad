@@ -42,6 +42,7 @@
 }
 
 - (IBAction)switchPage:(id)sender {
+    [self switchButtonSelected:((UIView*)sender).tag];
     [self.pageVC switchPage:((UIView*)sender).tag];
 }
 

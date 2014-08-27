@@ -41,6 +41,8 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)switchPage:(id)sender {
+    
+    [self switchButtonSelected:((UIView*)sender).tag];
     [self.pageVC switchPage:((UIView*)sender).tag];
 }
 

@@ -40,7 +40,7 @@
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     if(self.isFullPage){
-        return 12;
+        return 9;
     }else{
         return 3;
     }

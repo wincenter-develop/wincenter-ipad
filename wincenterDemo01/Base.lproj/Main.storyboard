@@ -2484,6 +2484,9 @@
                                         <state key="normal" title="开机" backgroundImage="空白按键">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="openVm:" destination="9bv-Lj-UxJ" eventType="touchUpInside" id="BTH-ce-WMr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGz-3O-QeC">
                                         <rect key="frame" x="4" y="53" width="81" height="36"/>
@@ -2493,6 +2496,9 @@
                                         <state key="normal" title="关机" backgroundImage="空白按键">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="shutdownVm:" destination="9bv-Lj-UxJ" eventType="touchUpInside" id="9oF-zR-5hf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UyZ-ER-yPa">
                                         <rect key="frame" x="5" y="97" width="81" height="36"/>
@@ -2502,6 +2508,9 @@
                                         <state key="normal" title="重启" backgroundImage="空白按键">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="restartVm:" destination="9bv-Lj-UxJ" eventType="touchUpInside" id="Tob-B9-cbY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngK-ad-c2A">
                                         <rect key="frame" x="5" y="137" width="81" height="36"/>
@@ -2511,6 +2520,10 @@
                                         <state key="normal" title="迁移" backgroundImage="空白按键">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="migrateVm:" destination="9bv-Lj-UxJ" eventType="touchUpInside" id="380-5q-Fno"/>
+                                            <segue destination="80e-3g-XXd" kind="modal" modalPresentationStyle="formSheet" id="DeL-B4-Idg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -2810,7 +2823,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bc-He-0CU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5271" y="5175"/>
+            <point key="canvasLocation" x="6017" y="5175"/>
         </scene>
         <!--Vm Detail PerformanceVC-->
         <scene sceneID="3FK-j7-uqw">
@@ -2893,7 +2906,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hn8-tK-J8u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5271" y="4247"/>
+            <point key="canvasLocation" x="6017" y="4247"/>
         </scene>
         <!--Vm Detail InfoVC-->
         <scene sceneID="WRC-QJ-SZt">
@@ -7398,6 +7411,112 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abq-do-H7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-256" y="1189"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cek-tP-Xny">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="80e-3g-XXd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3ZD-cq-Ld4">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tzv-aS-0yA" kind="relationship" relationship="rootViewController" id="a1y-FN-kRf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6tp-pq-tNY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2979" y="4867"/>
+        </scene>
+        <!--Vm MigrateVC - 迁移虚拟机-->
+        <scene sceneID="F6Q-5Y-Wan">
+            <objects>
+                <tableViewController id="tzv-aS-0yA" customClass="VmMigrateVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="pkM-bV-lFx">
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <sections>
+                            <tableViewSection headerTitle="当虚拟磁盘全部在共享存储池上时，才可以进行池内迁移！" id="LQ5-Fd-Hjv">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="xUo-ej-yxa">
+                                        <rect key="frame" x="0.0" y="99" width="540" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xUo-ej-yxa" id="JP9-Bt-Eyr">
+                                            <rect key="frame" x="0.0" y="0.0" width="540" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="虚拟机名称：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGr-j7-zHk">
+                                                    <rect key="frame" x="20" y="11" width="102" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="虚拟机名称" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a2O-eI-Xdz">
+                                                    <rect key="frame" x="130" y="7" width="390" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="UXe-En-Llf">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ND6-ty-Rfd">
+                                        <rect key="frame" x="0.0" y="163" width="540" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ND6-ty-Rfd" id="vvP-pC-VCe">
+                                            <rect key="frame" x="0.0" y="0.0" width="540" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="目标主机：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pL-lk-CyG">
+                                                    <rect key="frame" x="20" y="11" width="85" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="目标主机" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="25K-hL-kzk">
+                                                    <rect key="frame" x="131" y="7" width="389" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="tzv-aS-0yA" id="G6x-uk-1Se"/>
+                            <outlet property="delegate" destination="tzv-aS-0yA" id="T3p-bH-DlS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="迁移虚拟机" id="hb2-HK-zxV">
+                        <barButtonItem key="leftBarButtonItem" title="取消" id="RoX-ge-7H4">
+                            <connections>
+                                <action selector="close:" destination="tzv-aS-0yA" id="feM-yI-SoT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="完成" id="NcS-AW-ztT">
+                            <connections>
+                                <action selector="done:" destination="tzv-aS-0yA" id="7FV-3v-AAJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0PQ-le-5bK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3585" y="4867"/>
         </scene>
     </scenes>
     <resources>

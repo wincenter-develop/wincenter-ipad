@@ -10,5 +10,5 @@
 
 @interface VmDetailContainerVC : UIViewController
 @property (strong, nonatomic) IBOutlet UIView *vmControlBtns;
-
+-(void)hideControlBtn;
 @end

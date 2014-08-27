@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6815D23819AD6F3000E49F50 /* VmMigrateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6815D23719AD6F3000E49F50 /* VmMigrateVC.m */; };
 		6895B23F19AC75180024FF40 /* ControlRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895B23E19AC75180024FF40 /* ControlRecordVC.m */; };
 		6895B24219AC75370024FF40 /* ControlRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895B24119AC75370024FF40 /* ControlRecordCell.m */; };
 		6895B24519AC771B0024FF40 /* ControlRecordCellForTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895B24419AC771B0024FF40 /* ControlRecordCellForTime.m */; };
@@ -114,6 +115,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6815D23619AD6F3000E49F50 /* VmMigrateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmMigrateVC.h; sourceTree = "<group>"; };
+		6815D23719AD6F3000E49F50 /* VmMigrateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmMigrateVC.m; sourceTree = "<group>"; };
 		6895B23D19AC75180024FF40 /* ControlRecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlRecordVC.h; sourceTree = "<group>"; };
 		6895B23E19AC75180024FF40 /* ControlRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlRecordVC.m; sourceTree = "<group>"; };
 		6895B24019AC75370024FF40 /* ControlRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlRecordCell.h; sourceTree = "<group>"; };
@@ -555,6 +558,8 @@
 				68C69DE619AC840D00882045 /* VmDetailMemryConfigVC.m */,
 				8432461219AAE9DF007FD8DE /* VmNewVC.h */,
 				8432461319AAE9DF007FD8DE /* VmNewVC.m */,
+				6815D23619AD6F3000E49F50 /* VmMigrateVC.h */,
+				6815D23719AD6F3000E49F50 /* VmMigrateVC.m */,
 			);
 			name = vm;
 			sourceTree = "<group>";
@@ -777,6 +782,7 @@
 				84ECEC2919A58DAD0089F651 /* VmDetailSnapshootVC.m in Sources */,
 				84ECEC3319A5A3180089F651 /* HostDetailNetworkInsideFooter.m in Sources */,
 				842913FC19A1A32A00F192EE /* HostDetailNetworkInsideVC.m in Sources */,
+				6815D23819AD6F3000E49F50 /* VmMigrateVC.m in Sources */,
 				8411FA84199E04EC002168F4 /* NetworkContainerVC.m in Sources */,
 				6895B24B19AC79590024FF40 /* WarningInfoVC.m in Sources */,
 				84ECEC4619A603E80089F651 /* StorageDetailDiskHeader.m in Sources */,

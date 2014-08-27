@@ -44,7 +44,27 @@
 //    self.vmControlBtns.frame.origin.x = 922;
 //    self.vmControlBtns.frame.origin.y = 22;
 }
-
+-(void)hideControlBtn{
+    self.vmControlBtns.hidden = YES;
+}
+- (IBAction)openVm:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"虚拟机正在开机..." delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+    [alert show];
+    [self hideControlBtn];
+}
+- (IBAction)shutdownVm:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"虚拟机正在关机..." delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+    [alert show];
+    [self hideControlBtn];
+}
+- (IBAction)restartVm:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"虚拟机正在重启..." delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+    [alert show];
+    [self hideControlBtn];
+}
+- (IBAction)migrateVm:(id)sender {
+    [self hideControlBtn];
+}
 /*
 #pragma mark - Navigation
 

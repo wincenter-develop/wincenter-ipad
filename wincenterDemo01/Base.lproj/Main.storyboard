@@ -57,7 +57,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1OS-Ed-JEU" kind="modal" identifier="toAfterLogin" modalTransitionStyle="crossDissolve" id="SST-1m-1JZ"/>
+                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bSf-GH-HIM"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="center" minimumFontSize="17" background="账号密码输入框" translatesAutoresizingMaskIntoConstraints="NO" id="Y32-fm-5y3">
@@ -73,6 +73,9 @@
                                 <state key="normal" title="服务器IP设置">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Cj0-ld-keC" kind="modal" modalPresentationStyle="formSheet" id="02r-3w-y3C"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wincenter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDT-Ch-qNi">
                                 <rect key="frame" x="330" y="116" width="377" height="61"/>
@@ -95,6 +98,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="FYI-na-miS"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="password" destination="Y32-fm-5y3" id="1zv-Gi-Z3d"/>
+                        <outlet property="userName" destination="7CP-4J-LuH" id="XgM-y9-M3h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -1249,7 +1256,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8uy-fM-JPG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-755" y="1189"/>
+            <point key="canvasLocation" x="-9" y="1189"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ib1-JI-bza">
@@ -1264,7 +1271,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xQy-LS-Z0R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2126" y="349"/>
+            <point key="canvasLocation" x="-2348" y="314"/>
         </scene>
         <!--Datacenter Detail PageVC-->
         <scene sceneID="mDt-eX-sc3">
@@ -1281,7 +1288,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yft-CB-eYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1037" y="1023"/>
+            <point key="canvasLocation" x="1783" y="1023"/>
         </scene>
         <!--Datacenter Detail InfoVC-->
         <scene sceneID="u9O-xm-9c2">
@@ -1736,7 +1743,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mgi-23-l1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2569" y="930"/>
+            <point key="canvasLocation" x="3315" y="930"/>
         </scene>
         <!--Storage Detail InfoVC-->
         <scene sceneID="orD-UE-0us">
@@ -2005,7 +2012,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JeC-Dg-f51" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3993" y="878"/>
+            <point key="canvasLocation" x="4739" y="878"/>
         </scene>
         <!--Storage Detail DiskVC-->
         <scene sceneID="bJc-b0-Ug4">
@@ -2145,7 +2152,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gix-4v-rQt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5361" y="1111"/>
+            <point key="canvasLocation" x="6107" y="1111"/>
         </scene>
         <!--Storage CollectionVC-->
         <scene sceneID="1Y4-bd-Xul">
@@ -4749,7 +4756,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O26-OY-CXO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6849" y="1377"/>
+            <point key="canvasLocation" x="7595" y="1377"/>
         </scene>
         <!--Host Detail Network PageVC-->
         <scene sceneID="Mqk-7W-NSB">
@@ -4777,7 +4784,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sy2-Ae-Vv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8115" y="1524"/>
+            <point key="canvasLocation" x="8861" y="1524"/>
         </scene>
         <!--Host Detail Network ContainerVC-->
         <scene sceneID="56b-SG-GmO">
@@ -4836,7 +4843,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nd5-gf-Cp3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6827" y="377"/>
+            <point key="canvasLocation" x="7573" y="377"/>
         </scene>
         <!--Host Detail Nic OutsideVC-->
         <scene sceneID="leE-kI-zkf">
@@ -5122,7 +5129,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kve-YF-fbJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9339" y="1276"/>
+            <point key="canvasLocation" x="10085" y="1276"/>
         </scene>
         <!--Host Detail Network InsideVC-->
         <scene sceneID="3bv-yV-pvO">
@@ -7526,7 +7533,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="srV-IZ-DJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1119" y="1189"/>
+            <point key="canvasLocation" x="-373" y="1189"/>
         </scene>
         <!--Warning InfoVC - 告警信息-->
         <scene sceneID="FWa-c7-AzS">
@@ -7604,7 +7611,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0AX-fl-seB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="115" y="1189"/>
+            <point key="canvasLocation" x="861" y="1189"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6fi-56-KWe">
@@ -7623,7 +7630,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abq-do-H7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-256" y="1189"/>
+            <point key="canvasLocation" x="490" y="1189"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cek-tP-Xny">
@@ -7829,6 +7836,89 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dyw-OU-XsT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5351" y="4956"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qgh-0q-uRa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cj0-ld-keC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="540" height="220"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Pz-7V-bwr">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Wwk-HP-gwG" kind="relationship" relationship="rootViewController" id="Uvm-Dt-DHB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2CV-Iw-iaG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3337" y="1189"/>
+        </scene>
+        <!--Ip SetVC - 服务器IP设置-->
+        <scene sceneID="R4D-CG-7Zq">
+            <objects>
+                <tableViewController id="Wwk-HP-gwG" customClass="ipSetVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="9mA-hJ-h92">
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="220"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <sections>
+                            <tableViewSection id="h9W-2T-kF7">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="5ld-2I-3hM">
+                                        <rect key="frame" x="0.0" y="79" width="540" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5ld-2I-3hM" id="64d-BV-Bkz">
+                                            <rect key="frame" x="0.0" y="0.0" width="540" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IP地址：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQs-jj-uh8">
+                                                    <rect key="frame" x="20" y="11" width="67" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="例如：192.168.0.0" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uSl-O5-wgU">
+                                                    <rect key="frame" x="95" y="7" width="425" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Wwk-HP-gwG" id="XFp-y4-epF"/>
+                            <outlet property="delegate" destination="Wwk-HP-gwG" id="W3j-DS-cBi"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="服务器IP设置" id="tGo-zW-Gw0">
+                        <barButtonItem key="leftBarButtonItem" title="取消" id="QmO-gX-itU">
+                            <connections>
+                                <action selector="close:" destination="Wwk-HP-gwG" id="7Xh-cA-GOD"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="完成" id="TAX-U6-F3N">
+                            <connections>
+                                <action selector="done:" destination="Wwk-HP-gwG" id="hwe-up-OR2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="540" height="220"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S7G-Pt-hez" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2654" y="1189"/>
         </scene>
     </scenes>
     <resources>

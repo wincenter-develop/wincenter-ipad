@@ -7,10 +7,14 @@
 //
 
 #import "VmDetailPageVC.h"
+#import "VmDetailContainerVC.h"
 
 @interface VmDetailPageVC ()
 
 @property NSArray *vmDetailPages;
+@property int _previousIndex;
+@property int _selectedIndex;
+@property int showIndex;
 
 @end
 
@@ -34,8 +38,13 @@
                 [self.storyboard instantiateViewControllerWithIdentifier:@"VmDetailSnapshoot"]
     ];
     [self setViewControllers:@[self.vmDetailPages[0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+    self._previousIndex = 0;
     self.dataSource = self;
     self.delegate = self;
+}
+- (void) switchPage:(int)index{
+    [self setViewControllers:@[self.vmDetailPages[index]] direction:(index>self._previousIndex ? UIPageViewControllerNavigationDirectionForward : UIPageViewControllerNavigationDirectionReverse) animated:YES completion:nil];
+    self._previousIndex = index;
 }
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController{
     NSUInteger index =  [self.vmDetailPages indexOfObject:viewController];
@@ -55,6 +64,15 @@
         return self.vmDetailPages[index];
     }
     
+}
+- (void)pageViewController:(UIPageViewController *)pageViewController willTransitionToViewControllers:(NSArray *)pendingViewControllers{
+    self._selectedIndex = [self.vmDetailPages indexOfObject:pendingViewControllers[0]];
+}
+- (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed{
+    if(completed){
+        self.showIndex = self._selectedIndex;
+        [((VmDetailContainerVC*)self.parentViewController) switchButtonSelected:self._selectedIndex];
+    }
 }
 - (void)didReceiveMemoryWarning
 {

@@ -2491,9 +2491,49 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="97P-6w-Seb" kind="embed" id="eNI-Qe-bkR"/>
+                                    <segue destination="97P-6w-Seb" kind="embed" identifier="toVmPageVC" id="eNI-Qe-bkR"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J51-d2-7gf">
+                                <rect key="frame" x="943" y="250" width="81" height="252"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJ7-IG-Dcg">
+                                        <rect key="frame" x="42" y="20" width="39" height="69"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="tab-摘要">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="tab-摘要-selected"/>
+                                        <connections>
+                                            <action selector="switchPage:" destination="9bv-Lj-UxJ" eventType="touchUpInside" id="gmg-aj-QRV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T30-wd-OT9">
+                                        <rect key="frame" x="42" y="92" width="39" height="69"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="tab-性能">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="tab-性能-selected"/>
+                                        <connections>
+                                            <action selector="switchPage:" destination="9bv-Lj-UxJ" eventType="touchUpInside" id="ln6-lS-zcO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P33-TS-Goi">
+                                        <rect key="frame" x="42" y="163" width="39" height="69"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="tab-快照">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="tab-快照-selected"/>
+                                        <connections>
+                                            <action selector="switchPage:" destination="9bv-Lj-UxJ" eventType="touchUpInside" id="pFc-53-EEn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vzN-j1-HlI">
                                 <rect key="frame" x="922" y="100" width="89" height="182"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2637,6 +2677,9 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="button1" destination="MJ7-IG-Dcg" id="5Uh-ag-3cK"/>
+                        <outlet property="button2" destination="T30-wd-OT9" id="jO6-Jn-geN"/>
+                        <outlet property="button3" destination="P33-TS-Goi" id="J0E-Jj-bEu"/>
                         <outlet property="vmControlBtns" destination="vzN-j1-HlI" id="pmo-Po-FWq"/>
                     </connections>
                 </viewController>
@@ -7752,6 +7795,8 @@
         <image name="login2" width="1024" height="768"/>
         <image name="tab-存储" width="39" height="69"/>
         <image name="tab-存储-selected" width="39" height="69"/>
+        <image name="tab-快照" width="39" height="69"/>
+        <image name="tab-快照-selected" width="39" height="69"/>
         <image name="tab-性能" width="39" height="69"/>
         <image name="tab-性能-selected" width="39" height="69"/>
         <image name="tab-摘要" width="39" height="69"/>

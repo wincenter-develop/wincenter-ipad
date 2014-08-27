@@ -10,4 +10,6 @@
 
 @interface VmDetailPageVC : UIPageViewController<UIPageViewControllerDelegate,UIPageViewControllerDataSource>
 
+- (void) switchPage:(int)index;
+
 @end

@@ -35,7 +35,7 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名" textAlignment="center" minimumFontSize="17" background="账号密码输入框" translatesAutoresizingMaskIntoConstraints="NO" id="7CP-4J-LuH">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="admin" placeholder="用户名" textAlignment="center" minimumFontSize="17" background="账号密码输入框" translatesAutoresizingMaskIntoConstraints="NO" id="7CP-4J-LuH">
                                 <rect key="frame" x="360" y="316" width="317" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -57,10 +57,10 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bSf-GH-HIM"/>
+                                    <segue destination="1OS-Ed-JEU" kind="modal" identifier="toAfterLogin" modalTransitionStyle="crossDissolve" id="INP-G6-T1t"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="center" minimumFontSize="17" background="账号密码输入框" translatesAutoresizingMaskIntoConstraints="NO" id="Y32-fm-5y3">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="passw0rd" placeholder="密码" textAlignment="center" minimumFontSize="17" background="账号密码输入框" translatesAutoresizingMaskIntoConstraints="NO" id="Y32-fm-5y3">
                                 <rect key="frame" x="360" y="365" width="317" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -91,6 +91,9 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="1OS-Ed-JEU" kind="modal" modalTransitionStyle="crossDissolve" id="F7x-WA-uQ8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -7966,9 +7969,10 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ID4-Zj-INj"/>
+        <segue reference="INP-G6-T1t"/>
         <segue reference="gJ2-cV-FVA"/>
-        <segue reference="FRz-kX-7gf"/>
         <segue reference="aDs-d2-keC"/>
+        <segue reference="FRz-kX-7gf"/>
+        <segue reference="ID4-Zj-INj"/>
     </inferredMetricsTieBreakers>
 </document>

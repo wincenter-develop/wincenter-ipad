@@ -45,7 +45,10 @@
     }
     
     if ([msg isEqualToString:@""]) {
-        [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterMainVC"] animated:YES];
+        UIViewController *targetView = [self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterMainVC"];
+        targetView.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        [self presentViewController:targetView animated:YES completion:nil];
+        //[self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterMainVC"] animated:YES];
     }else{
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"登录提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
         [alert show];

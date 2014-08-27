@@ -57,7 +57,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1OS-Ed-JEU" kind="modal" identifier="toAfterLogin" modalTransitionStyle="crossDissolve" id="SST-1m-1JZ"/>
+                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bSf-GH-HIM"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="center" minimumFontSize="17" background="账号密码输入框" translatesAutoresizingMaskIntoConstraints="NO" id="Y32-fm-5y3">
@@ -98,6 +98,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="FYI-na-miS"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="password" destination="Y32-fm-5y3" id="1zv-Gi-Z3d"/>
+                        <outlet property="userName" destination="7CP-4J-LuH" id="XgM-y9-M3h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -1267,7 +1271,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xQy-LS-Z0R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1380" y="349"/>
+            <point key="canvasLocation" x="-2348" y="314"/>
         </scene>
         <!--Datacenter Detail PageVC-->
         <scene sceneID="mDt-eX-sc3">

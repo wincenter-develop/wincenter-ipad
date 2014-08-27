@@ -35,7 +35,22 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)loginAction:(id)sender {
-    [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterMainVC"] animated:YES];
+    NSString *msg = @"";
+    if ([self.userName.text isEqualToString:@""]) {
+        msg = @"用户名不能为空！";
+    }else if([self.password.text isEqualToString:@""]){
+        msg = @"密码不能为空！";
+    }else if(!([self.userName.text isEqualToString:@"admin"] && [self.password.text isEqualToString:@"passw0rd"])) {
+        msg = @"密码输入错误，请重新输入";
+    }
+    
+    if ([msg isEqualToString:@""]) {
+        [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterMainVC"] animated:YES];
+    }else{
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"登录提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        [alert show];
+    }
+    
     
 }
 

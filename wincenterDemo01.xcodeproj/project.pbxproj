@@ -11,6 +11,7 @@
 		6815D23B19AD7D7000E49F50 /* VmMigrateSelectHostVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6815D23A19AD7D7000E49F50 /* VmMigrateSelectHostVC.m */; };
 		6815D23E19AD7F0600E49F50 /* VmMigrateSelectHostListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6815D23D19AD7F0600E49F50 /* VmMigrateSelectHostListVC.m */; };
 		6815D24119AD831100E49F50 /* VmMigrateSelectHostListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6815D24019AD831100E49F50 /* VmMigrateSelectHostListCell.m */; };
+		6815D24519ADAFD200E49F50 /* ipSetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6815D24419ADAFD200E49F50 /* ipSetVC.m */; };
 		6895B23F19AC75180024FF40 /* ControlRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895B23E19AC75180024FF40 /* ControlRecordVC.m */; };
 		6895B24219AC75370024FF40 /* ControlRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895B24119AC75370024FF40 /* ControlRecordCell.m */; };
 		6895B24519AC771B0024FF40 /* ControlRecordCellForTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895B24419AC771B0024FF40 /* ControlRecordCellForTime.m */; };
@@ -126,6 +127,8 @@
 		6815D23D19AD7F0600E49F50 /* VmMigrateSelectHostListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmMigrateSelectHostListVC.m; sourceTree = "<group>"; };
 		6815D23F19AD831100E49F50 /* VmMigrateSelectHostListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmMigrateSelectHostListCell.h; sourceTree = "<group>"; };
 		6815D24019AD831100E49F50 /* VmMigrateSelectHostListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmMigrateSelectHostListCell.m; sourceTree = "<group>"; };
+		6815D24319ADAFD200E49F50 /* ipSetVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ipSetVC.h; sourceTree = "<group>"; };
+		6815D24419ADAFD200E49F50 /* ipSetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ipSetVC.m; sourceTree = "<group>"; };
 		6895B23D19AC75180024FF40 /* ControlRecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlRecordVC.h; sourceTree = "<group>"; };
 		6895B23E19AC75180024FF40 /* ControlRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlRecordVC.m; sourceTree = "<group>"; };
 		6895B24019AC75370024FF40 /* ControlRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlRecordCell.h; sourceTree = "<group>"; };
@@ -251,8 +254,8 @@
 		8432461319AAE9DF007FD8DE /* VmNewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmNewVC.m; sourceTree = "<group>"; };
 		84C1F9D719A4430300B49166 /* DatacenterDetailPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatacenterDetailPageVC.h; sourceTree = "<group>"; };
 		84C1F9D819A4430300B49166 /* DatacenterDetailPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatacenterDetailPageVC.m; sourceTree = "<group>"; };
-		84C1F9E819A4530500B49166 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
-		84C1F9E919A4530500B49166 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		84C1F9E819A4530500B49166 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginVC.h; path = ../LoginVC.h; sourceTree = "<group>"; };
+		84C1F9E919A4530500B49166 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginVC.m; path = ../LoginVC.m; sourceTree = "<group>"; };
 		84C1F9F719A4883A00B49166 /* HostDetailContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostDetailContainerVC.h; sourceTree = "<group>"; };
 		84C1F9F819A4883A00B49166 /* HostDetailContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostDetailContainerVC.m; sourceTree = "<group>"; };
 		84C1F9FA19A49ACA00B49166 /* VmDetailContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailContainerVC.h; sourceTree = "<group>"; };
@@ -331,6 +334,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6815D24219ADAF9600E49F50 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				84C1F9E819A4530500B49166 /* LoginVC.h */,
+				84C1F9E919A4530500B49166 /* LoginVC.m */,
+				6815D24319ADAFD200E49F50 /* ipSetVC.h */,
+				6815D24419ADAFD200E49F50 /* ipSetVC.m */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
 		8411FA14199DE3A9002168F4 = {
 			isa = PBXGroup;
 			children = (
@@ -367,8 +381,6 @@
 				8411FA55199DE81E002168F4 /* pages */,
 				8411FA2F199DE3A9002168F4 /* AppDelegate.h */,
 				8411FA30199DE3A9002168F4 /* AppDelegate.m */,
-				84C1F9E819A4530500B49166 /* LoginVC.h */,
-				84C1F9E919A4530500B49166 /* LoginVC.m */,
 				8411FA32199DE3A9002168F4 /* Main.storyboard */,
 				8411FA38199DE3A9002168F4 /* Images.xcassets */,
 				8411FA27199DE3A9002168F4 /* Supporting Files */,
@@ -408,6 +420,7 @@
 		8411FA55199DE81E002168F4 /* pages */ = {
 			isa = PBXGroup;
 			children = (
+				6815D24219ADAF9600E49F50 /* main */,
 				8432460E19AACF36007FD8DE /* pop */,
 				842914F219A2371900F192EE /* vm */,
 				84ECEC4019A5ECC70089F651 /* vmNetwork */,
@@ -842,6 +855,7 @@
 				84F5975919A2F64D00D99DE9 /* VmDetailNetworkVC.m in Sources */,
 				8429140219A1A39C00F192EE /* HostDetailNetworkOutsideCell.m in Sources */,
 				8411FA2D199DE3A9002168F4 /* main.m in Sources */,
+				6815D24519ADAFD200E49F50 /* ipSetVC.m in Sources */,
 				68C69DE719AC840D00882045 /* VmDetailMemryConfigVC.m in Sources */,
 				84ECEC2C19A591EE0089F651 /* PoolDetailInfoVC.m in Sources */,
 				842914D219A225B500F192EE /* PoolDetailPageVC.m in Sources */,

@@ -10,5 +10,10 @@
 
 @interface VmDetailContainerVC : UIViewController
 @property (strong, nonatomic) IBOutlet UIView *vmControlBtns;
+@property (weak, nonatomic) IBOutlet UIButton *button1;
+@property (weak, nonatomic) IBOutlet UIButton *button2;
+@property (weak, nonatomic) IBOutlet UIButton *button3;
+
+-(void)switchButtonSelected:(int)index;
 -(void)hideControlBtn;
 @end

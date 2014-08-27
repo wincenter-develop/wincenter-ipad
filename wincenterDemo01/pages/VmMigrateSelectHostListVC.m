@@ -1,19 +1,20 @@
 //
-//  ControlRecordVC.m
+//  VmMigrateSelectHostListVC.m
 //  wincenterDemo01
 //
-//  Created by 黄茂坚 on 14-8-26.
+//  Created by 黄茂坚 on 14-8-27.
 //  Copyright (c) 2014年 黄茂坚. All rights reserved.
 //
 
-#import "ControlRecordVC.h"
-#import "ControlRecordCell.h"
-#import "ControlRecordCellForTime.h"
-@interface ControlRecordVC ()
+#import "VmMigrateSelectHostListVC.h"
+#import "VmMigrateSelectHostListCell.h"
 
+@interface VmMigrateSelectHostListVC ()
+@property VmMigrateSelectHostListCell *prevCell;
+@property NSMutableArray *hosts;
 @end
 
-@implementation ControlRecordVC
+@implementation VmMigrateSelectHostListVC
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -33,6 +34,10 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.hosts = [NSMutableArray new];
+    for (int i = 0; i<30; i++) {
+        [self.hosts addObject:[NSString stringWithFormat:@"物理机－%d",i]];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,86 +50,30 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
-    return 5;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
-    return 6;
+    return self.hosts.count;
 }
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    VmMigrateSelectHostListCell *selectedCell = (VmMigrateSelectHostListCell*)[tableView cellForRowAtIndexPath:indexPath];
+    self.prevCell.accessoryType = UITableViewCellAccessoryNone;
+    selectedCell.accessoryType = UITableViewCellAccessoryCheckmark;
+    
+    self.prevCell = selectedCell;
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
-    switch (indexPath.row) {
-        case 0:{
-            ControlRecordCellForTime *cell = [tableView dequeueReusableCellWithIdentifier:@"ControlRecordCellForTime" forIndexPath:indexPath];
-            
-            return cell;
-        }
-        case 1:{
-            ControlRecordCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ControlRecordCell" forIndexPath:indexPath];
-            
-            return cell;
-        }
-        case 2:{
-            ControlRecordCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ControlRecordCell" forIndexPath:indexPath];
-            
-            return cell;
-        }
-        case 3:{
-            ControlRecordCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ControlRecordCell" forIndexPath:indexPath];
-            
-            return cell;
-        }
-        case 4:{
-            ControlRecordCellForTime *cell = [tableView dequeueReusableCellWithIdentifier:@"ControlRecordCellForTime" forIndexPath:indexPath];
-            
-            return cell;
-        }
-        case 5:{
-            ControlRecordCellForTime *cell = [tableView dequeueReusableCellWithIdentifier:@"ControlRecordCellForTime" forIndexPath:indexPath];
-            
-            return cell;
-        }
-        default:
-            break;
-    }
+    VmMigrateSelectHostListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VmMigrateSelectHostListCell" forIndexPath:indexPath];
     
-    return nil;
+    cell.textLabel.text = self.hosts[indexPath.row];
+    
+    return cell;
 }
 
-- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    switch (indexPath.row) {
-        case 0:{
-            return 44;
-        }
-        case 1:{
-            return 90;
-        }
-        case 2:{
-            return 90;
-        }
-        case 3:{
-            return 90;
-        }
-        case 4:{
-            return 40;
-        }
-        case 5:{            
-            return 40;
-        }
-        default:
-            break;
-    }
-    return 44;
-}
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    return @"2014-07-13 星期三";
-}
 
 /*
 // Override to support conditional editing of the table view.

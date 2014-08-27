@@ -70,13 +70,6 @@
     
 }
 
-- (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController{
-    return self.poolDetailPages.count;
-}
-- (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController {
-    return 0;
-}
-
 - (void)pageViewController:(UIPageViewController *)pageViewController willTransitionToViewControllers:(NSArray *)pendingViewControllers{
     self._selectedIndex = [self.poolDetailPages indexOfObject:pendingViewControllers[0]];
 }

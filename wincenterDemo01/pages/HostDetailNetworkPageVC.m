@@ -14,6 +14,7 @@
 @property NSArray *HostDetailNetworkPages;
 @property NSInteger _selectedIndex;
 @property int previousIndex;
+@property int showIndex;
 @end
 
 @implementation HostDetailNetworkPageVC
@@ -37,6 +38,7 @@
                              
         ];
      self.previousIndex = 0;
+    self.showIndex = 0;
     [self setViewControllers:@[self.HostDetailNetworkPages[0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
 
     self.dataSource = self;
@@ -45,6 +47,7 @@
 }
 
 -(void) switchVC:(int)index{
+    self.showIndex = index;
     
     [self setViewControllers:@[self.HostDetailNetworkPages[index]] direction:(index>self.previousIndex ? UIPageViewControllerNavigationDirectionForward : UIPageViewControllerNavigationDirectionReverse) animated:YES completion:nil];
     self.previousIndex = index;
@@ -73,7 +76,7 @@
     return self.HostDetailNetworkPages.count;
 }
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController {
-    return 0;
+    return self.showIndex;
 }
 
 - (void)pageViewController:(UIPageViewController *)pageViewController willTransitionToViewControllers:(NSArray *)pendingViewControllers{
@@ -81,6 +84,7 @@
 }
 - (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed{
     if(completed){
+        self.showIndex = self._selectedIndex;
         ((HostDetailNetworkContainerVC*)self.parentViewController).HostDetailNetworkSegmented.selectedSegmentIndex = self._selectedIndex;
     }
 }

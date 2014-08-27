@@ -2242,8 +2242,8 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" red="0.16667238810000001" green="1" blue="0.24229795500000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </view>
-                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="存储池" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRY-9U-NUX">
-                                    <rect key="frame" x="25" y="79" width="51" height="21"/>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="存储" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRY-9U-NUX">
+                                    <rect key="frame" x="25" y="79" width="34" height="21"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3756,7 +3756,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="kDQ-Sy-9nE" kind="embed" id="0QK-rs-QxU"/>
+                                    <segue destination="kDQ-Sy-9nE" kind="embed" identifier="toHostPageVC" id="0QK-rs-QxU"/>
                                 </connections>
                             </containerView>
                             <view alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="er8-sk-CC2">
@@ -3827,6 +3827,68 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OhF-6P-yOU">
+                                <rect key="frame" x="957" y="259" width="67" height="457"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17H-Fj-Ozr">
+                                        <rect key="frame" x="28" y="0.0" width="39" height="69"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="tab-摘要">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="tab-摘要-selected"/>
+                                        <connections>
+                                            <action selector="switchPage:" destination="DTQ-PB-hJR" eventType="touchUpInside" id="9oi-If-0Pu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eh1-nY-T09">
+                                        <rect key="frame" x="28" y="72" width="39" height="69"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="tab-性能">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="tab-性能-selected"/>
+                                        <connections>
+                                            <action selector="switchPage:" destination="DTQ-PB-hJR" eventType="touchUpInside" id="BPH-QZ-Sg8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWp-5x-Cnj">
+                                        <rect key="frame" x="28" y="143" width="39" height="69"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="tab-存储">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="tab-存储-selected"/>
+                                        <connections>
+                                            <action selector="switchPage:" destination="DTQ-PB-hJR" eventType="touchUpInside" id="aTb-qh-23s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJy-FL-SvZ">
+                                        <rect key="frame" x="28" y="214" width="39" height="104"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="tab-网络连接">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="tab-网络连接-selected"/>
+                                        <connections>
+                                            <action selector="switchPage:" destination="DTQ-PB-hJR" eventType="touchUpInside" id="8A4-yW-F0a"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIF-33-UNQ">
+                                        <rect key="frame" x="28" y="320" width="39" height="127"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="tab-网络适配器">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="tab-网络适配器-selected"/>
+                                        <connections>
+                                            <action selector="switchPage:" destination="DTQ-PB-hJR" eventType="touchUpInside" id="YfP-CD-xdB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -3835,6 +3897,13 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="button1" destination="17H-Fj-Ozr" id="p8a-uz-Feo"/>
+                        <outlet property="button2" destination="eh1-nY-T09" id="SaL-ta-2dM"/>
+                        <outlet property="button3" destination="WWp-5x-Cnj" id="qF6-BV-TLM"/>
+                        <outlet property="button4" destination="hJy-FL-SvZ" id="bWk-5D-qa8"/>
+                        <outlet property="button5" destination="JIF-33-UNQ" id="86p-XE-GPr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AMd-4r-BEf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -6116,7 +6185,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="AEE-X5-jRR" kind="embed" identifier="toPageVC" id="aOC-7O-CN6"/>
+                                    <segue destination="AEE-X5-jRR" kind="embed" identifier="toPoolPageVC" id="aOC-7O-CN6"/>
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WPO-kV-WLf">
@@ -6187,10 +6256,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oc3-IA-WWC">
                                         <rect key="frame" x="23" y="49" width="39" height="69"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <state key="normal" image="tab-摘要">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="selected" image="tab-摘要-selected"/>
                                         <connections>
@@ -6201,10 +6270,9 @@
                                         <rect key="frame" x="23" y="119" width="39" height="82"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="物理机" image="tab-物理机">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="selected" image="tab-物理机-selected"/>
                                         <connections>
@@ -6215,10 +6283,9 @@
                                         <rect key="frame" x="23" y="202" width="39" height="69"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="存储池" image="tab-存储">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="selected" image="tab-存储-selected"/>
                                         <connections>
@@ -7546,10 +7613,16 @@
         <image name="login2" width="1024" height="768"/>
         <image name="tab-存储" width="39" height="69"/>
         <image name="tab-存储-selected" width="39" height="69"/>
+        <image name="tab-性能" width="39" height="69"/>
+        <image name="tab-性能-selected" width="39" height="69"/>
         <image name="tab-摘要" width="39" height="69"/>
         <image name="tab-摘要-selected" width="39" height="69"/>
         <image name="tab-物理机" width="39" height="82"/>
         <image name="tab-物理机-selected" width="39" height="82"/>
+        <image name="tab-网络连接" width="39" height="104"/>
+        <image name="tab-网络连接-selected" width="39" height="104"/>
+        <image name="tab-网络适配器" width="39" height="127"/>
+        <image name="tab-网络适配器-selected" width="39" height="127"/>
         <image name="业务icon" width="138" height="137"/>
         <image name="业务卡片框" width="262" height="129"/>
         <image name="业务虚拟机卡片框" width="246" height="100"/>
@@ -7620,8 +7693,8 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="ID4-Zj-INj"/>
-        <segue reference="EuJ-h6-fcO"/>
         <segue reference="gJ2-cV-FVA"/>
         <segue reference="FRz-kX-7gf"/>
+        <segue reference="aDs-d2-keC"/>
     </inferredMetricsTieBreakers>
 </document>

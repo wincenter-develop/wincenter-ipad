@@ -7,10 +7,14 @@
 //
 
 #import "HostDetailPageVC.h"
+#import "HostDetailContainerVC.h"
 
 @interface HostDetailPageVC ()
 
 @property NSArray *HostDetailPages;
+@property int _previousIndex;
+@property int _selectedIndex;
+@property int showIndex;
 
 @end
 
@@ -36,8 +40,13 @@
         [self.storyboard instantiateViewControllerWithIdentifier:@"HostDetailNic"]
     ];
     [self setViewControllers:@[self.HostDetailPages[0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+    self._previousIndex = 0;
     self.dataSource = self;
     self.delegate = self;
+}
+- (void) switchPage:(int)index{
+    [self setViewControllers:@[self.HostDetailPages[index]] direction:(index>self._previousIndex ? UIPageViewControllerNavigationDirectionForward : UIPageViewControllerNavigationDirectionReverse) animated:YES completion:nil];
+    self._previousIndex = index;
 }
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController{
     NSUInteger index =  [self.HostDetailPages indexOfObject:viewController];
@@ -58,6 +67,19 @@
     }
     
 }
+
+//背景图片切换
+- (void)pageViewController:(UIPageViewController *)pageViewController willTransitionToViewControllers:(NSArray *)pendingViewControllers{
+    self._selectedIndex = [self.HostDetailPages indexOfObject:pendingViewControllers[0]];
+}
+
+- (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed{
+    if(completed){
+        self.showIndex = self._selectedIndex;
+        [((HostDetailContainerVC*)self.parentViewController) switchButtonSelected:self._selectedIndex];
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

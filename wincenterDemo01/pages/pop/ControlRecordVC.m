@@ -103,13 +103,13 @@
             return 44;
         }
         case 1:{
-            return 120;
+            return 90;
         }
         case 2:{
-            return 120;
+            return 90;
         }
         case 3:{
-            return 120;
+            return 90;
         }
         case 4:{
             return 40;

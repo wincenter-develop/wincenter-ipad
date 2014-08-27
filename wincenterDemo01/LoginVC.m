@@ -34,7 +34,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)loginAction:(id)sender {
+- (BOOL)loginAction {
     NSString *msg = @"";
     if ([self.userName.text isEqualToString:@""]) {
         msg = @"用户名不能为空！";
@@ -45,10 +45,11 @@
     }
     
     if ([msg isEqualToString:@""]) {
-        [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"DatacenterMainVC"] animated:YES];
+        return YES;
     }else{
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"登录提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
         [alert show];
+        return NO;
     }
     
     
@@ -65,8 +66,9 @@
 }
 
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
-    
-    //login validation; return No if validation failed;
+    if([identifier isEqualToString:@"toAfterLogin"]){
+        return [self loginAction];
+    }
     
     return YES;
 }

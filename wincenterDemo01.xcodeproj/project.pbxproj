@@ -25,6 +25,9 @@
 		6895B24E19AC79810024FF40 /* WarningInfoCellForTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6895B24D19AC79810024FF40 /* WarningInfoCellForTime.m */; };
 		68C69DE419AC83EE00882045 /* VmDetailCPUConfigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C69DE319AC83EE00882045 /* VmDetailCPUConfigVC.m */; };
 		68C69DE719AC840D00882045 /* VmDetailMemryConfigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C69DE619AC840D00882045 /* VmDetailMemryConfigVC.m */; };
+		68F4538C19AF0F03007983AD /* NetworkVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F4538B19AF0F03007983AD /* NetworkVO.m */; };
+		68F4538F19AF103C007983AD /* storageVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F4538E19AF103C007983AD /* storageVO.m */; };
+		68F4539219AF123F007983AD /* BusinessVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F4539119AF123F007983AD /* BusinessVO.m */; };
 		8411FA21199DE3A9002168F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8411FA20199DE3A9002168F4 /* Foundation.framework */; };
 		8411FA23199DE3A9002168F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8411FA22199DE3A9002168F4 /* CoreGraphics.framework */; };
 		8411FA25199DE3A9002168F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8411FA24199DE3A9002168F4 /* UIKit.framework */; };
@@ -173,6 +176,12 @@
 		68C69DE319AC83EE00882045 /* VmDetailCPUConfigVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailCPUConfigVC.m; sourceTree = "<group>"; };
 		68C69DE519AC840D00882045 /* VmDetailMemryConfigVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailMemryConfigVC.h; sourceTree = "<group>"; };
 		68C69DE619AC840D00882045 /* VmDetailMemryConfigVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailMemryConfigVC.m; sourceTree = "<group>"; };
+		68F4538A19AF0F03007983AD /* NetworkVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkVO.h; sourceTree = "<group>"; };
+		68F4538B19AF0F03007983AD /* NetworkVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkVO.m; sourceTree = "<group>"; };
+		68F4538D19AF103C007983AD /* storageVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = storageVO.h; sourceTree = "<group>"; };
+		68F4538E19AF103C007983AD /* storageVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = storageVO.m; sourceTree = "<group>"; };
+		68F4539019AF123F007983AD /* BusinessVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessVO.h; sourceTree = "<group>"; };
+		68F4539119AF123F007983AD /* BusinessVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessVO.m; sourceTree = "<group>"; };
 		8411FA1D199DE3A9002168F4 /* wincenterDemo01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wincenterDemo01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8411FA20199DE3A9002168F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8411FA22199DE3A9002168F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -561,6 +570,8 @@
 		8411FA75199E0328002168F4 /* network */ = {
 			isa = PBXGroup;
 			children = (
+				68F4538A19AF0F03007983AD /* NetworkVO.h */,
+				68F4538B19AF0F03007983AD /* NetworkVO.m */,
 				8411FA76199E0438002168F4 /* NetworkOutsideVC.h */,
 				8411FA77199E0438002168F4 /* NetworkOutsideVC.m */,
 				8411FA7C199E04B4002168F4 /* NetworkOutsideCell.h */,
@@ -578,6 +589,8 @@
 		8429143019A1F1DB00F192EE /* storage */ = {
 			isa = PBXGroup;
 			children = (
+				68F4538D19AF103C007983AD /* storageVO.h */,
+				68F4538E19AF103C007983AD /* storageVO.m */,
 				8429143119A1F39C00F192EE /* StorageCollectionVC.h */,
 				8429143219A1F39C00F192EE /* StorageCollectionVC.m */,
 				8429143419A1F3B200F192EE /* StorageCollectionCell.h */,
@@ -607,6 +620,8 @@
 		842914D919A22E3800F192EE /* business */ = {
 			isa = PBXGroup;
 			children = (
+				68F4539019AF123F007983AD /* BusinessVO.h */,
+				68F4539119AF123F007983AD /* BusinessVO.m */,
 				842914DA19A22F5300F192EE /* BusinessCollectionVC.h */,
 				842914DB19A22F5300F192EE /* BusinessCollectionVC.m */,
 				842914E019A2303000F192EE /* BusinessCollectionHeader.h */,
@@ -928,6 +943,7 @@
 				84ECEC2319A58C460089F651 /* VmDetailInfoVC.m in Sources */,
 				8411FA70199DEF1E002168F4 /* HostCollectionHeader.m in Sources */,
 				8411FA8D199E33F1002168F4 /* HostDetailPerformanceVC.m in Sources */,
+				68F4539219AF123F007983AD /* BusinessVO.m in Sources */,
 				84ECEC4319A603A40089F651 /* StorageDetailDiskFooter.m in Sources */,
 				8429144519A1F90100F192EE /* StorageDetailDiskCell.m in Sources */,
 				6895B24819AC791A0024FF40 /* WarningInfoCell.m in Sources */,
@@ -939,6 +955,7 @@
 				84F5976819A2F6CC00D99DE9 /* VmDetailNetworkFooter.m in Sources */,
 				6815D25619ADC5B800E49F50 /* DatacenterVO.m in Sources */,
 				842914DF19A22F7600F192EE /* BusinessCollectionCell.m in Sources */,
+				68F4538F19AF103C007983AD /* storageVO.m in Sources */,
 				84ECEC3819A5D1840089F651 /* HostDetailNicPageVC.m in Sources */,
 				8432461119AAD0B5007FD8DE /* OptionsVC.m in Sources */,
 				6895B24E19AC79810024FF40 /* WarningInfoCellForTime.m in Sources */,
@@ -957,6 +974,7 @@
 				84C1F9EA19A4530500B49166 /* LoginVC.m in Sources */,
 				8411FA5C199DE86E002168F4 /* DatacenterContainerVC.m in Sources */,
 				843BAD7719AEBE920056EE0C /* VmDetailDiskMoreVC.m in Sources */,
+				68F4538C19AF0F03007983AD /* NetworkVO.m in Sources */,
 				84F5975919A2F64D00D99DE9 /* VmDetailNetworkVC.m in Sources */,
 				6815D25919ADCF2F00E49F50 /* HostNetworkVO.m in Sources */,
 				8429140219A1A39C00F192EE /* HostDetailNetworkOutsideCell.m in Sources */,

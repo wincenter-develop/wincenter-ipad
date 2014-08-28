@@ -1,18 +1,18 @@
 //
-//  HostNicOutsideMoreVC.m
+//  VmDetailDiskMoreVC.m
 //  wincenterDemo01
 //
-//  Created by huadi on 14-8-27.
+//  Created by huadi on 14-8-28.
 //  Copyright (c) 2014年 huadi. All rights reserved.
 //
 
-#import "HostNicOutsideMoreVC.h"
+#import "VmDetailDiskMoreVC.h"
 
-@interface HostNicOutsideMoreVC ()
+@interface VmDetailDiskMoreVC ()
 
 @end
 
-@implementation HostNicOutsideMoreVC
+@implementation VmDetailDiskMoreVC
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -22,14 +22,14 @@
     }
     return self;
 }
-- (IBAction)goback:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+- (IBAction)goback:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning

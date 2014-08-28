@@ -83,6 +83,10 @@
 		842914FE19A237A700F192EE /* VmCollectionFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 842914FD19A237A700F192EE /* VmCollectionFooter.m */; };
 		8432461119AAD0B5007FD8DE /* OptionsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8432461019AAD0B5007FD8DE /* OptionsVC.m */; };
 		8432461419AAE9DF007FD8DE /* VmNewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8432461319AAE9DF007FD8DE /* VmNewVC.m */; };
+		843BAD7419AEBB8C0056EE0C /* StorageDetailDiskMoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 843BAD7319AEBB8C0056EE0C /* StorageDetailDiskMoreVC.m */; };
+		843BAD7719AEBE920056EE0C /* VmDetailDiskMoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 843BAD7619AEBE920056EE0C /* VmDetailDiskMoreVC.m */; };
+		843BAD7A19AEBEB50056EE0C /* VmDetailNetworkMoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 843BAD7919AEBEB50056EE0C /* VmDetailNetworkMoreVC.m */; };
+		843BAE8E19AEDB9F0056EE0C /* BusinessVmMoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 843BAE8D19AEDB9F0056EE0C /* BusinessVmMoreVC.m */; };
 		8489354019ADC00600E9BC7A /* HostMoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8489353F19ADC00600E9BC7A /* HostMoreVC.m */; };
 		8489354319ADC32300E9BC7A /* PoolMoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8489354219ADC32300E9BC7A /* PoolMoreVC.m */; };
 		8489354A19ADCA1B00E9BC7A /* StorageMoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8489354919ADCA1B00E9BC7A /* StorageMoreVC.m */; };
@@ -276,6 +280,14 @@
 		8432461019AAD0B5007FD8DE /* OptionsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsVC.m; sourceTree = "<group>"; };
 		8432461219AAE9DF007FD8DE /* VmNewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmNewVC.h; sourceTree = "<group>"; };
 		8432461319AAE9DF007FD8DE /* VmNewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmNewVC.m; sourceTree = "<group>"; };
+		843BAD7219AEBB8C0056EE0C /* StorageDetailDiskMoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageDetailDiskMoreVC.h; sourceTree = "<group>"; };
+		843BAD7319AEBB8C0056EE0C /* StorageDetailDiskMoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageDetailDiskMoreVC.m; sourceTree = "<group>"; };
+		843BAD7519AEBE920056EE0C /* VmDetailDiskMoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailDiskMoreVC.h; sourceTree = "<group>"; };
+		843BAD7619AEBE920056EE0C /* VmDetailDiskMoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailDiskMoreVC.m; sourceTree = "<group>"; };
+		843BAD7819AEBEB50056EE0C /* VmDetailNetworkMoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VmDetailNetworkMoreVC.h; sourceTree = "<group>"; };
+		843BAD7919AEBEB50056EE0C /* VmDetailNetworkMoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VmDetailNetworkMoreVC.m; sourceTree = "<group>"; };
+		843BAE8C19AEDB9F0056EE0C /* BusinessVmMoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessVmMoreVC.h; sourceTree = "<group>"; };
+		843BAE8D19AEDB9F0056EE0C /* BusinessVmMoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessVmMoreVC.m; sourceTree = "<group>"; };
 		8489353E19ADC00600E9BC7A /* HostMoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostMoreVC.h; sourceTree = "<group>"; };
 		8489353F19ADC00600E9BC7A /* HostMoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostMoreVC.m; sourceTree = "<group>"; };
 		8489354119ADC32300E9BC7A /* PoolMoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolMoreVC.h; sourceTree = "<group>"; };
@@ -586,6 +598,8 @@
 				84ECEC4519A603E80089F651 /* StorageDetailDiskHeader.m */,
 				8489354819ADCA1B00E9BC7A /* StorageMoreVC.h */,
 				8489354919ADCA1B00E9BC7A /* StorageMoreVC.m */,
+				843BAD7219AEBB8C0056EE0C /* StorageDetailDiskMoreVC.h */,
+				843BAD7319AEBB8C0056EE0C /* StorageDetailDiskMoreVC.m */,
 			);
 			name = storage;
 			sourceTree = "<group>";
@@ -605,6 +619,8 @@
 				84C1FA0119A4AF8F00B49166 /* BusinessDetailInfoVC.m */,
 				8489354E19ADD28200E9BC7A /* BusinessMoreVC.h */,
 				8489354F19ADD28200E9BC7A /* BusinessMoreVC.m */,
+				843BAE8C19AEDB9F0056EE0C /* BusinessVmMoreVC.h */,
+				843BAE8D19AEDB9F0056EE0C /* BusinessVmMoreVC.m */,
 			);
 			name = business;
 			sourceTree = "<group>";
@@ -740,6 +756,8 @@
 				84F5975E19A2F69900D99DE9 /* VmDetailDiskHeader.m */,
 				84F5976019A2F6A900D99DE9 /* VmDetailDiskFooter.h */,
 				84F5976119A2F6A900D99DE9 /* VmDetailDiskFooter.m */,
+				843BAD7519AEBE920056EE0C /* VmDetailDiskMoreVC.h */,
+				843BAD7619AEBE920056EE0C /* VmDetailDiskMoreVC.m */,
 			);
 			name = vmDisk;
 			sourceTree = "<group>";
@@ -755,6 +773,8 @@
 				84F5976419A2F6BF00D99DE9 /* VmDetailNetworkHeader.m */,
 				84F5976619A2F6CC00D99DE9 /* VmDetailNetworkFooter.h */,
 				84F5976719A2F6CC00D99DE9 /* VmDetailNetworkFooter.m */,
+				843BAD7819AEBEB50056EE0C /* VmDetailNetworkMoreVC.h */,
+				843BAD7919AEBEB50056EE0C /* VmDetailNetworkMoreVC.m */,
 			);
 			name = vmNetwork;
 			sourceTree = "<group>";
@@ -863,9 +883,11 @@
 				84F5977119A3258900D99DE9 /* HostDetailNetworkPageVC.m in Sources */,
 				842914E519A2308E00F192EE /* BusinessCollectionFooter.m in Sources */,
 				6895B24219AC75370024FF40 /* ControlRecordCell.m in Sources */,
+				843BAE8E19AEDB9F0056EE0C /* BusinessVmMoreVC.m in Sources */,
 				8411FA6A199DEEE9002168F4 /* HostCollectionVC.m in Sources */,
 				8411FA78199E0438002168F4 /* NetworkOutsideVC.m in Sources */,
 				8489355619ADD6CA00E9BC7A /* HostNicInsideMoreVC.m in Sources */,
+				843BAD7419AEBB8C0056EE0C /* StorageDetailDiskMoreVC.m in Sources */,
 				8489355019ADD28200E9BC7A /* BusinessMoreVC.m in Sources */,
 				8489354319ADC32300E9BC7A /* PoolMoreVC.m in Sources */,
 				8429143919A1F40000F192EE /* StorageCollectionHeader.m in Sources */,
@@ -934,10 +956,12 @@
 				842914DC19A22F5300F192EE /* BusinessCollectionVC.m in Sources */,
 				84C1F9EA19A4530500B49166 /* LoginVC.m in Sources */,
 				8411FA5C199DE86E002168F4 /* DatacenterContainerVC.m in Sources */,
+				843BAD7719AEBE920056EE0C /* VmDetailDiskMoreVC.m in Sources */,
 				84F5975919A2F64D00D99DE9 /* VmDetailNetworkVC.m in Sources */,
 				6815D25919ADCF2F00E49F50 /* HostNetworkVO.m in Sources */,
 				8429140219A1A39C00F192EE /* HostDetailNetworkOutsideCell.m in Sources */,
 				8411FA2D199DE3A9002168F4 /* main.m in Sources */,
+				843BAD7A19AEBEB50056EE0C /* VmDetailNetworkMoreVC.m in Sources */,
 				6815D24519ADAFD200E49F50 /* ipSetVC.m in Sources */,
 				68C69DE719AC840D00882045 /* VmDetailMemryConfigVC.m in Sources */,
 				84ECEC2C19A591EE0089F651 /* PoolDetailInfoVC.m in Sources */,

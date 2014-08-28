@@ -1,18 +1,18 @@
 //
-//  HostNicOutsideMoreVC.m
+//  VmDetailNetworkMoreVC.m
 //  wincenterDemo01
 //
-//  Created by huadi on 14-8-27.
+//  Created by huadi on 14-8-28.
 //  Copyright (c) 2014年 huadi. All rights reserved.
 //
 
-#import "HostNicOutsideMoreVC.h"
+#import "VmDetailNetworkMoreVC.h"
 
-@interface HostNicOutsideMoreVC ()
+@interface VmDetailNetworkMoreVC ()
 
 @end
 
-@implementation HostNicOutsideMoreVC
+@implementation VmDetailNetworkMoreVC
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
